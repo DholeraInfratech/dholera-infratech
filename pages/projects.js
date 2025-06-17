@@ -79,8 +79,8 @@ const projects = [
     description:
       "WestWyn County is a visionary plotted development that redefines investment in the heart of Dholera Smart City. Backed by DholeraGujarat.in, it offers a perfect blend of smart urban planning, nature, and futuristic infrastructure.",
     highlights: [
-      "Located in the Activation Zone",
-      "Plot sizes from 100 to 500 sq. yd.",
+      "Located at Fedra–Pipli Highway, Dholera",
+      "Plot sizes from 150 to 325 sq. yd.",
       "Immediate possession with legal clearances",
       "EV charging points and solar-ready design",
       "24x7 gated security and smart app-based management",

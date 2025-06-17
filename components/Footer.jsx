@@ -91,12 +91,12 @@ const Footer = () => (
             {
               icon: "fa-facebook",
               label: "Facebook",
-              link: "https://facebook.com/",
+              link: "https://www.facebook.com/profile.php?id=61577252619034",
             },
             {
               icon: "fa-instagram",
               label: "Instagram",
-              link: "https://instagram.com/",
+              link: "https://www.instagram.com/dholeragujaratestates/",
             },
             {
               icon: "fa-linkedin",
