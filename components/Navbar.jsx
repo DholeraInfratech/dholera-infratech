@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-gradient-to-r from-[#0f2027] via-[#2c5364] to-[#c6b776] shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-3 py-3 flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-3">
@@ -22,8 +22,8 @@ export default function Navbar() {
                 alt="Dholera Logo"
                 className="h-10 w-10 object-contain drop-shadow-lg"
               />
-              <span className="text-2xl font-extrabold text-white tracking-wide hover:text-[#ffd200] transition">
-                DholeraGujarat
+              <span className="text-xl font-extrabold text-white tracking-wide hover:text-[#ffd200] transition">
+                DholeraGujarat.in
               </span>
             </Link>
           </div>
@@ -65,6 +65,18 @@ export default function Navbar() {
               className="hover:text-[#ffd200] transition duration-200"
             >
               Contact
+            </Link>
+            <Link
+              href="/blog"
+              className="hover:text-[#ffd200] transition duration-200"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/gallery"
+              className="hover:text-[#ffd200] transition duration-200"
+            >
+              Gallery
             </Link>
 
             {/* Login/logout section commented out for SEO and performance */}
@@ -121,6 +133,20 @@ export default function Navbar() {
               className="hover:text-[#ffd200]"
             >
               Contact
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-[#ffd200]"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/gallery"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-[#ffd200]"
+            >
+              Gallery
             </Link>
 
             {/* Login button on mobile commented out */}

@@ -1,20 +1,29 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import jsPDF from 'jspdf';
+import { useState, useEffect } from "react";
+import jsPDF from "jspdf";
 
 export default function CostSheet() {
   const [customer, setCustomer] = useState({
-    name: '',
-    email: '',
-    mobile: '',
-    plotNo: '',
+    name: "",
+    email: "",
+    mobile: "",
+    plotNo: "",
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    mobile: "",
   });
 
   const [plot, setPlot] = useState({
-    areaSqYd: 0,
-    areaSqFt: 0,
+    areaSqYd: "",
+    areaSqFt: "",
     rate: 9250,
+  });
+
+  const [plotErrors, setPlotErrors] = useState({
+    areaSqYd: "",
   });
 
   const [charges, setCharges] = useState({
@@ -33,198 +42,333 @@ export default function CostSheet() {
   });
 
   useEffect(() => {
-    const plotAmount = plot.areaSqYd * plot.rate;
-    const devAmount = plot.areaSqYd * charges.devPerYd;
-    const plcAmount = plot.areaSqYd * charges.plcPerYd;
-    const addCharges = devAmount + plcAmount + charges.maintenance + charges.legal;
-    const totalPayable = plotAmount + addCharges;
+    const area = parseFloat(plot.areaSqYd) || 0;
+    const rate = parseFloat(plot.rate) || 0;
+    const devRate = parseFloat(charges.devPerYd) || 0;
+    const plcRate = parseFloat(charges.plcPerYd) || 0;
+    const maintenance = parseFloat(charges.maintenance) || 0;
+    const legal = parseFloat(charges.legal) || 0;
 
-    setTotals({ plotAmount, devAmount, plcAmount, addCharges, totalPayable });
+    const plotAmount = area * rate;
+    const devAmount = area * devRate;
+    const plcAmount = area * plcRate;
+    const addCharges = devAmount  + maintenance + legal;
+    const totalPayable = plotAmount  + plcAmount + addCharges;
+
+    setTotals({
+      plotAmount,
+      devAmount,
+      plcAmount,
+      addCharges,
+      totalPayable,
+    });
   }, [plot, charges]);
 
   const handleChange = (setFunc) => (e) => {
-    const { name, value, type } = e.target;
-    // For number inputs, parse to number else keep string
-    setFunc((prev) => ({
-      ...prev,
-      [name]: type === 'number' ? Number(value) : value,
-    }));
+    const { name, value } = e.target;
+
+    const numericFields = [
+      "areaSqYd",
+      "areaSqFt",
+      "rate",
+      "devPerYd",
+      "plcPerYd",
+      "maintenance",
+      "legal",
+    ];
+
+    if (numericFields.includes(name)) {
+      let val = value.replace(/[^0-9.]/g, "");
+
+      // Allow only one decimal
+      const parts = val.split(".");
+      if (parts.length > 2) return;
+
+      // Remove leading zeros unless before decimal
+      if (parts[0].length > 1 && parts[0].startsWith("0")) {
+        parts[0] = parts[0].replace(/^0+/, "") || "0";
+      }
+
+      val = parts.join(".");
+      const parsed = val === "" ? "" : parseFloat(val);
+
+      setFunc((prev) => {
+        const updated = { ...prev, [name]: parsed };
+
+        // ✅ Auto-convert areaSqYd → areaSqFt
+        if (name === "areaSqYd" && setFunc === setPlot) {
+          updated.areaSqFt = parsed * 9;
+        }
+
+        return updated;
+      });
+    } else {
+      // For non-numeric fields like name, email, etc.
+      setFunc((prev) => ({ ...prev, [name]: value }));
+    }
   };
 
+  //  const formatCurrency = (val) => `₹${Number(val || 0).toLocaleString('en-IN')}`;
+
+  const formatCurrency = (value) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+      minimumFractionDigits: 2,
+    }).format(value || 0);
+
   const downloadPDF = () => {
+    const newErrors = {
+      name: !customer.name ? "Name is required" : "",
+      mobile: !customer.mobile ? "Contact number is required" : "",
+      areaSqYd: !plot.areaSqYd ? "Area in Sq. Yards is required" : "",
+    };
+    const newPlotErrors = {
+      areaSqYd: plot.areaSqYd ? "" : "Area (Sq. Yards) is required",
+    };
+    setErrors(newErrors);
+    setPlotErrors(newPlotErrors);
+
+    const hasErrors = Object.values(newErrors).some((err) => err);
+    if (hasErrors) return;
+
     const doc = new jsPDF();
-    doc.setFontSize(22);
-    doc.setTextColor('#4F46E5'); // Indigo-600 color
-    doc.text('Cost Sheet', 105, 20, null, null, 'center');
+    let y = 20;
 
-    doc.setFontSize(14);
-    doc.setTextColor('#111827'); // Gray-900
+    const rowHeight = 10;
+    const labelX = 20;
+    const valueX = 130;
+    const tableWidth = 170;
 
-    let y = 40;
-    doc.text('Customer Details:', 14, y);
-    y += 10;
-    doc.text(`Name: ${customer.name || '-'}`, 14, y);
-    y += 10;
-    doc.text(`Email: ${customer.email || '-'}`, 14, y);
-    y += 10;
-    doc.text(`Mobile: ${customer.mobile || '-'}`, 14, y);
-    y += 10;
-    doc.text(`Plot No: ${customer.plotNo || '-'}`, 14, y);
+    const drawCenteredTitle = (title, size = 16, offsetY = 10) => {
+      doc.setFontSize(size);
+      doc.setFont("helvetica", "bold");
+      doc.text(title, 105, y, { align: "center" });
+      y += offsetY;
+    };
 
-    y += 20;
-    doc.text('Plot Details:', 14, y);
-    y += 10;
-    doc.text(`Area (Sq.Yard): ${plot.areaSqYd}`, 14, y);
-    y += 10;
-    doc.text(`Area (Sq.Ft): ${plot.areaSqFt}`, 14, y);
-    y += 10;
-    doc.text(`Base Price: ₹${plot.rate}`, 14, y);
-    y += 10;
-    doc.text(`Plot Amount: ₹${totals.plotAmount.toLocaleString()}`, 14, y);
+    const drawSectionHeader = (title) => {
+      doc.setFillColor("#E5E7EB"); // light gray
+      doc.rect(20, y, tableWidth, rowHeight, "F");
+      doc.setFontSize(13);
+      doc.setTextColor("#059669"); // green
+      doc.setFont("helvetica", "bold");
+      doc.text(title, labelX + 2, y + 7);
+      y += rowHeight;
+    };
 
-    y += 20;
-    doc.text('Additional Charges:', 14, y);
-    y += 10;
-    doc.text(`Development Charge: ₹${totals.devAmount.toLocaleString()}`, 14, y);
-    y += 10;
-    doc.text(`PLC Amount: ₹${totals.plcAmount.toLocaleString()}`, 14, y);
-    y += 10;
-    doc.text(`Maintenance: ₹${charges.maintenance.toLocaleString()}`, 14, y);
-    y += 10;
-    doc.text(`Legal Fees: ₹${charges.legal.toLocaleString()}`, 14, y);
-    y += 10;
-    doc.text(`Total Additional Charges: ₹${totals.addCharges.toLocaleString()}`, 14, y);
+    const drawRow = (label, value) => {
+      doc.setDrawColor("#D1D5DB"); // border gray
+      doc.setFontSize(11);
+      doc.setTextColor("#111827");
+      doc.setFont("helvetica", "normal");
+      doc.rect(20, y, 110, rowHeight);
+      doc.rect(130, y, 60, rowHeight);
+      doc.text(label, labelX + 2, y + 7);
+      doc.text(String(value), valueX + 2, y + 7);
+      y += rowHeight;
+    };
 
-    y += 20;
-    doc.setFontSize(16);
-    doc.setTextColor('#059669'); // Green-600
-    doc.text(`TOTAL AMOUNT PAYABLE: ₹${totals.totalPayable.toLocaleString()}`, 14, y);
+    // ==== Title ====
+    drawCenteredTitle("WESTWYN COUNTY", 18, 10);
+    drawCenteredTitle("Cost Sheet", 13, 12);
 
-    doc.save('cost-sheet.pdf');
+    // ==== Customer Details ====
+    drawSectionHeader("Customer Details");
+    drawRow("Customer Name", customer.name || "-");
+    drawRow("Contact Number", customer.mobile || "-");
+    drawRow("Email Address", customer.email || "-");
+    drawRow("Plot Number", customer.plotNo || "-");
+
+    // ==== Plot Details ====
+    drawSectionHeader("Plot Details");
+    drawRow("Area (Sq.Yard)", plot.areaSqYd || 0);
+    drawRow("Area (Sq.Feet)", plot.areaSqFt || 0);
+    drawRow("Basic Selling Price (Sq.Yard)", plot.rate);
+    drawRow(`PLC Amount (${charges.plcPerYd} per Sq.Yard)`, totals.plcAmount);
+    drawRow("Plot Amount", totals.plotAmount);
+
+    // ==== Additional Charges ====
+    drawSectionHeader("Additional Charges");
+    drawRow(
+      `Development Charges (${charges.devPerYd} per Sq.Yard)`,
+      totals.devAmount
+    );
+    drawRow("Maintenance Charges", charges.maintenance);
+    drawRow("Legal Fees", charges.legal);
+    drawRow("Total Additional Charges", totals.addCharges);
+
+    // ==== Total Amount ====
+    y += 5; // spacing
+    doc.setFillColor("#D1FAE5"); // light green
+    doc.setDrawColor("#10B981"); // green border
+    doc.rect(20, y, 170, rowHeight, "F"); // full-width styled row
+
+    doc.setFontSize(12);
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor("#065F46"); // dark green
+    doc.text("Total Payable Amount:", labelX + 2, y + 7);
+    doc.text(String(totals.totalPayable), valueX + 2, y + 7);
+    y += rowHeight;
+
+    // ==== Footer ====
+    y += 8;
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor("#000");
+    doc.text(
+      "Note: Stamp Duty is 5.9% for males and 4.9% for females",
+      labelX,
+      y
+    );
+
+    // ==== Styled & Centered Footer ====
+    y += 10;
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const centerX = pageWidth / 2;
+
+    doc.setFontSize(12);
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor("Black"); // green
+    doc.text("Thank you for choosing Westwyn County.", centerX, y, {
+      align: "center",
+    });
+
+    y += 5;
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    doc.setTextColor("#000");
+
+    const dateStr = new Date().toLocaleDateString("en-IN", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    });
+    doc.text(`Document generated on: ${dateStr}`, centerX, y, {
+      align: "center",
+    });
+
+    doc.save(`Westwyn_Cost_Sheet_${customer.plotNo || "Plot"}.pdf`);
   };
 
   return (
-    <div className="w-full  flex-row  px-8 py-5 bg-slate-50 ">
-      <h2 className="text-5xl font-extrabold text-indigo-600 text-center mb-14 tracking-wide drop-shadow-md">
-        Cost Sheet
-      </h2>
+    <div className="max-w-5xl mx-auto px-6 py-10 bg-white text-gray-800">
+      <h1 className="text-4xl font-bold text-indigo-700 text-center mb-12 drop-shadow">
+        WESTWYN COUNTY - Cost Sheet
+      </h1>
 
-      <div className="space-y-10 max-w-7xl mx-auto">
+      <Section title="Customer Details">
+        <Input
+          name="name"
+          label="Customer Name"
+          type="text"
+          value={customer.name}
+          onChange={handleChange(setCustomer)}
+          error={!!errors.name}
+          errorMessage={errors.name}
+        />
+        <Input
+          name="email"
+          label="Email Address"
+          type="email"
+          value={customer.email}
+          onChange={handleChange(setCustomer)}
+          error={!!errors.email}
+          errorMessage={errors.email}
+        />
+        <Input
+          name="mobile"
+          label="Contact Number"
+          type="tel"
+          pattern="[0-9]*"
+          inputMode="numeric"
+          value={customer.mobile}
+          onChange={(e) => {
+            const digitsOnly = e.target.value.replace(/\D/g, "");
+            setCustomer((prev) => ({ ...prev, mobile: digitsOnly }));
+          }}
+          error={!!errors.mobile}
+          errorMessage={errors.mobile}
+        />
+        <Input
+          name="plotNo"
+          label="Plot Number"
+          type="text"
+          value={customer.plotNo}
+          onChange={handleChange(setCustomer)}
+        />
+      </Section>
 
-        {/* Customer Details */}
-        <Section title="Customer Details">
-          <Input
-            name="name"
-            label="Name"
-            placeholder="Enter customer name"
-            value={customer.name}
-            onChange={handleChange(setCustomer)}
-          />
-          <Input
-            name="email"
-            label="Email"
-            placeholder="Enter email address"
-            value={customer.email}
-            onChange={handleChange(setCustomer)}
-          />
-          <Input
-            name="mobile"
-            label="Mobile"
-            placeholder="Enter mobile number"
-            value={customer.mobile}
-            onChange={handleChange(setCustomer)}
-          />
-          <Input
-            name="plotNo"
-            label="Plot No."
-            placeholder="Enter plot number"
-            value={customer.plotNo}
-            onChange={handleChange(setCustomer)}
-          />
-        </Section>
+      <Section title="Plot Details">
+        <Input
+          name="areaSqYd"
+          label="Area (Sq.Yard)"
+          type="number"
+          step="any"
+          value={plot.areaSqYd}
+          onChange={handleChange(setPlot)}
+          error={!!plotErrors.areaSqYd}
+          errorMessage={plotErrors.areaSqYd}
+        />
+        <Input
+          name="areaSqFt"
+          label="Area (Sq.Feet)"
+          type="number"
+          step="any"
+          value={plot.areaSqFt}
+          onChange={handleChange(setPlot)}
+        />
 
-        {/* Plot Details */}
-        <Section title="Plot Details">
-          <Input
-            type="number"
-            name="areaSqYd"
-            label="Area (Sq.Yard)"
-            placeholder="Enter area in sq. yards"
-            value={plot.areaSqYd}
-            onChange={handleChange(setPlot)}
-          />
-          <Input
-            type="number"
-            name="areaSqFt"
-            label="Area (Sq.Ft)"
-            placeholder="Enter area in sq. feet"
-            value={plot.areaSqFt}
-            onChange={handleChange(setPlot)}
-          />
-          <Input
-            type="number"
-            name="rate"
-            label="Base Selling Price (₹)"
-            placeholder="Base price per sq. yard"
-            value={plot.rate}
-            onChange={handleChange(setPlot)}
-          />
-          <Readonly label="Plot Amount (₹)" value={totals.plotAmount} />
-        </Section>
+        <Input
+          name="rate"
+          label="Basic Selling Price (₹/Sq.Yard)"
+          value={plot.rate}
+          onChange={handleChange(setPlot)}
+        />
+        <Readonly label="Plot Amount" value={totals.plotAmount} />
+        <Input
+          name="plcPerYd"
+          label="PLC Charge (₹/Sq.Yard)"
+          value={charges.plcPerYd}
+          onChange={handleChange(setCharges)}
+        />
+        <Readonly label="PLC Amount" value={totals.plcAmount} />
+      </Section>
 
-        {/* Additional Charges */}
-        <Section title="Additional Charges">
-          <Input
-            type="number"
-            name="devPerYd"
-            label="Development Charge (₹/Sq.Yard)"
-            placeholder="Enter development charge per sq.yard"
-            value={charges.devPerYd}
-            onChange={handleChange(setCharges)}
-          />
-          <Readonly label="Development Charge Amount (₹)" value={totals.devAmount} />
+      <Section title="Additional Charges">
+        <Input
+          name="devPerYd"
+          label="Development Charge (₹/Sq.Yard)"
+          value={charges.devPerYd}
+          onChange={handleChange(setCharges)}
+        />
+        <Readonly label="Development Amount" value={totals.devAmount} />
 
-          <Input
-            type="number"
-            name="plcPerYd"
-            label="PLC Charge (₹/Sq.Yard)"
-            placeholder="Enter PLC charge per sq.yard"
-            value={charges.plcPerYd}
-            onChange={handleChange(setCharges)}
-          />
-          <Readonly label="PLC Amount (₹)" value={totals.plcAmount} />
+        <Input
+          name="maintenance"
+          label="Maintenance Charges"
+          value={charges.maintenance}
+          onChange={handleChange(setCharges)}
+        />
+        <Input
+          name="legal"
+          label="Legal Fees"
+          value={charges.legal}
+          onChange={handleChange(setCharges)}
+        />
+        <Readonly label="Total Additional Charges" value={totals.addCharges} />
+      </Section>
 
-          <Input
-            type="number"
-            name="maintenance"
-            label="Maintenance Charges (₹)"
-            placeholder="Enter maintenance charges"
-            value={charges.maintenance}
-            onChange={handleChange(setCharges)}
-          />
-          <Input
-            type="number"
-            name="legal"
-            label="Legal Fees (₹)"
-            placeholder="Enter legal fees"
-            value={charges.legal}
-            onChange={handleChange(setCharges)}
-          />
-          <Readonly label="Total Additional Charges (₹)" value={totals.addCharges} />
-        </Section>
-
-        {/* Total */}
-        <div className="text-center mt-8">
-          <p className="text-3xl font-extrabold text-green-700 mb-6 tracking-tight drop-shadow-md">
-            TOTAL AMOUNT PAYABLE: ₹{totals.totalPayable.toLocaleString()}
-          </p>
-          <button
-            onClick={downloadPDF}
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 transition text-white font-semibold px-8 py-4 rounded-xl shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-400"
-          >
-            Download Cost Sheet PDF
-          </button>
-        </div>
+      <div className="text-center mt-12">
+        <p className="text-2xl font-bold text-green-700 mb-6">
+          Total Amount Payable: ₹{totals.totalPayable.toLocaleString()}
+        </p>
+        <button
+          onClick={downloadPDF}
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg shadow-lg font-semibold"
+        >
+          Download PDF
+        </button>
       </div>
     </div>
   );
@@ -232,30 +376,48 @@ export default function CostSheet() {
 
 function Section({ title, children }) {
   return (
-    <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-      <h3 className="text-2xl font-semibold text-gray-800 mb-6">{title}</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">{children}</div>
+    <section className="mb-10">
+      <h2 className="text-xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
+        {title}
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">{children}</div>
     </section>
   );
 }
 
-function Input({ name, label, value, onChange, type = 'text', placeholder }) {
+function Input({
+  name,
+  label,
+  value,
+  onChange,
+  type = "text",
+  step,
+  inputMode,
+  pattern,
+  error,
+  errorMessage,
+}) {
   return (
     <div>
-      <label htmlFor={name} className="block text-sm font-medium text-gray-700 mb-2">
+      <label
+        htmlFor={name}
+        className="block text-sm font-medium mb-1 text-gray-600"
+      >
         {label}
       </label>
       <input
         id={name}
-        type={type}
         name={name}
         value={value}
         onChange={onChange}
-        placeholder={placeholder}
-        className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400
-                   focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
-                   transition duration-200 ease-in-out text-gray-900"
+        type={type}
+        step={step}
+        pattern={pattern}
+        inputMode={inputMode}
+        className="w-full px-4 py-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+        placeholder={label}
       />
+      {error && <p className="text-sm text-red-600 mt-1">{errorMessage}</p>}
     </div>
   );
 }
@@ -263,13 +425,14 @@ function Input({ name, label, value, onChange, type = 'text', placeholder }) {
 function Readonly({ label, value }) {
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
+      <label className="block text-sm font-medium mb-1 text-gray-600">
+        {label}
+      </label>
       <input
         type="text"
-        value={`₹${value.toLocaleString()}`}
         readOnly
-        className="w-full px-4 py-3 border border-gray-200 bg-gray-100 rounded-lg shadow-sm
-                   text-gray-700 cursor-not-allowed"
+        value={`₹${value.toLocaleString()}`}
+        className="w-full px-4 py-2 border bg-gray-100 rounded-lg text-gray-700 shadow-sm"
       />
     </div>
   );

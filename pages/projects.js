@@ -18,7 +18,7 @@ const projects = [
       "Varied Plot Sizes",
       "Well-Planned Infrastructure",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/paradise2-1.png",
   },
   {
     name: "Orchid Township",
@@ -31,7 +31,7 @@ const projects = [
       "Varied Plot Sizes",
       "Well-Planned Infrastructure",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/orchid.png",
   },
   {
     name: "Paradise",
@@ -44,7 +44,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/paradise.png",
   },
   {
     name: "Maple",
@@ -57,7 +57,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/maple.png",
   },
   {
     name: "Marina Bay",
@@ -70,7 +70,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/marina-bay.png",
   },
   {
     name: "WestWyn County",
@@ -111,7 +111,7 @@ export default function Projects() {
       </Head>
 
       <Navbar />
-      <div className="min-h-screen p-8 bg-gray-50">
+      <div className="min-h-screen p-8 bg-gray-300">
         <div className="max-w-7xl mx-auto text-black">
           <h1 className="text-4xl font-bold text-center mb-12">Our Projects</h1>
 

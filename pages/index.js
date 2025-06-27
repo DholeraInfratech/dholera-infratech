@@ -12,6 +12,7 @@ import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import InvestorCompanies from "@/components/InvestorCompanies";
 import HeroSlider from "@/components/HeroSlider";
+import DholeraInfoSections from "@/components/DholeraInfoSections";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -27,13 +28,35 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>DholeraGujarat.in</title>
+        <title>
+          Dholera Gujarat | Plots, Properties & Investment Opportunities in
+          Dholera Smart City
+        </title>
         <meta
           name="description"
-          content="Explore Dholera Smart City and discover why DholeraGujarat.in is your most trusted destination for investments, insights, and updates."
+          content="Explore residential and commercial plots in Dholera Smart City. DholeraGujarat.in is your trusted source for real estate projects, property listings, investment insights, and Dholera development news."
         />
-        <link rel="icon" href="./images/dholera_gujarat_logo.ico" />
+        <meta
+          name="keywords"
+          content="Dholera, Dholera Smart City, Plots in Dholera, Properties in Dholera, Dholera Real Estate, Dholera Investment, Dholera Projects, Dholera Gujarat"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:title"
+          content="Dholera Gujarat - Plots & Properties in Dholera Smart City"
+        />
+        <meta
+          property="og:description"
+          content="Find the best residential and commercial plots in Dholera. Invest in India's first smart city today!"
+        />
+        <meta
+          property="og:image"
+          content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
+        />
+        <meta property="og:url" content="https://dholeragujarat.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="./images/dholera_gujarat_logo.ico" />
+        <link rel="canonical" href="https://dholeragujarat.in/" />
       </Head>
       <Navbar onLoginClick={() => setShowModal(true)} userName={userName} />
       <HeroSlider />
@@ -42,6 +65,7 @@ export default function Home() {
       <HeroBanner />
       <InvestorCompanies />
       <Testimonial />
+      <DholeraInfoSections />
 
       <AnimatePresence>
         {showModal && (

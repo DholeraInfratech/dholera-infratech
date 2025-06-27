@@ -1,4 +1,4 @@
-// components/HeroSlider.jsx
+// HeroSlider.jsx
 'use client';
 
 import Image from 'next/image';
@@ -13,28 +13,28 @@ const slides = [
     img: '/images/slider/slider1.png',
     title: 'Real Estate that Reflects Your Vision',
     subtitle: 'Welcome to DholeraGujarat.in',
-    text: 'Crafted with Care, Delivered with Precision - in Dholera Smart City',
-    alt: 'Aerial view of real estate in Dholera Smart City',
+    text: 'Explore premium plots and properties in Dholera Smart City — crafted with care, delivered with precision.',
+    alt: 'Plots and properties in Dholera Smart City aerial view',
   },
   {
     img: '/images/slider/westwyngate.png',
     title: 'Our Blueprint to Build Your Dream',
     subtitle: 'Welcome to DholeraGujarat.in',
-    text: 'Delivering Spaces That Inspire & Empower',
-    alt: 'Clubhouse view of Westwyn Gate in Dholera',
+    text: 'Buy residential and commercial plots in Westwyn Gate – inspiring investment in Dholera real estate.',
+    alt: 'Clubhouse of Westwyn Gate, a property investment in Dholera',
   },
   {
     img: '/images/slider/paradise2.png',
     title: 'Driving the Growth of Dholera Smart City',
     subtitle: 'Welcome to DholeraGujarat.in',
-    text: 'Turning Ideas into Iconic Landmarks',
-    alt: 'Entry gate of Paradise 2 real estate project',
+    text: 'Discover Paradise 2 – one of the top Dholera real estate projects for smart investors.',
+    alt: 'Paradise 2 project – gated entry of smart city property in Dholera',
   },
 ];
 
 export default function HeroSlider() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden" aria-label="Featured Dholera Projects">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         loop
@@ -51,9 +51,9 @@ export default function HeroSlider() {
                 alt={slide.alt}
                 fill
                 style={{ objectFit: 'cover' }}
-                priority={index === 0} // prioritize the first image for LCP
+                priority={index === 0}
               />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white font-bold px-4">
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white font-bold px-4">
                 <div className="p-8 rounded-xl max-w-2xl text-center space-y-4">
                   <div className="text-lg tracking-wider uppercase">{slide.subtitle}</div>
                   <h2 className="text-3xl font-bold">{slide.title}</h2>
@@ -65,7 +65,6 @@ export default function HeroSlider() {
         ))}
       </Swiper>
 
-     
     </section>
   );
 }

@@ -5,27 +5,27 @@ export default function HeroBanner() {
   const features = [
     {
       title: "🚄 Excellent Connectivity",
-      desc: "Strategically located with access to the Delhi-Mumbai Industrial Corridor (DMIC), a high-speed bullet train, 6-lane expressways, and an upcoming international airport. Dholera ensures you're connected to the world.",
+      desc: "Dholera Smart City offers unparalleled connectivity through the Delhi-Mumbai Industrial Corridor (DMIC), upcoming bullet train stations, 6-lane expressways, and a world-class international airport — ideal for residential and commercial plots in Gujarat.",
     },
     {
       title: "🏭 Industrial & Tech Zone",
-      desc: "Dedicated industrial zones for high-tech industries: aerospace, defense, semiconductors, electric vehicles, and green tech. Pre-approved land and single-window clearance make it investor-friendly.",
+      desc: "Pre-planned industrial zones in Dholera for aerospace, EVs, defense, semiconductors, and renewable technologies. Single-window clearances and plug-and-play plots make it perfect for industrial and tech-based investment.",
     },
     {
       title: "🌱 Eco-Smart Living",
-      desc: "Dholera is India's first Platinum-rated Greenfield city. Features include 100% renewable energy, underground utilities, smart traffic systems, and 30% green space across the city.",
+      desc: "Experience future-ready eco-smart urban life in Dholera — 100% renewable energy, underground infrastructure, AI-driven utilities, and 30% green cover make it India's most sustainable city.",
     },
     {
       title: "💼 Investment Magnet",
-      desc: "Attracting global investors with plug-and-play infrastructure, zero waterlogging zones, 24x7 power, and data networks. Approved by GIDC, NITI Aayog, and supported by global urban planners.",
+      desc: "Recognized by NITI Aayog and GIDC, Dholera attracts global real estate investors with its integrated infrastructure, fiber connectivity, and zero-waterlogging zones. Invest in Dholera and benefit from long-term capital growth.",
     },
     {
       title: "🏙️ Smart Urban Planning",
-      desc: "Divided into logically planned residential, commercial, and industrial zones with integrated transport, education hubs, and healthcare zones—designed for both work and life.",
+      desc: "Dholera Smart City is divided into logically planned residential, industrial, and commercial zones with smart traffic systems, metro corridors, education parks, and hospitals — a city built to live and work.",
     },
     {
       title: "📈 High ROI Potential",
-      desc: "Early investors are already seeing sharp land value appreciation. As Dholera nears completion phases, ROI is expected to multiply, making now the best time to invest.",
+      desc: "Land appreciation in Dholera has grown sharply in recent years. With infrastructure nearing completion, property in Dholera promises exceptional ROI for early investors in plots and real estate.",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function HeroBanner() {
       <div className="relative h-[400px] flex items-center justify-center">
         <Image
           src="/images/slider/dholerabg.png"
-          alt="Dholera Smart City Banner"
+          alt="Dholera Smart City - Invest in Gujarat's Future"
           fill
           priority
           className="object-cover object-center"
@@ -55,8 +55,7 @@ export default function HeroBanner() {
               Invest in Dholera Smart City
             </h2>
             <p className="text-lg text-gray-100 leading-relaxed drop-shadow">
-              India's First Greenfield Smart City with Global Infrastructure
-              Standards
+              Explore top plots and properties in India’s First Greenfield Smart City — a government-backed infrastructure marvel in Gujarat.
             </p>
           </div>
         </div>
@@ -68,14 +67,10 @@ export default function HeroBanner() {
           Why Invest in Dholera Smart City?
         </h3>
         <p className="text-lg text-center max-w-3xl mx-auto leading-relaxed text-gray-800">
-          Dholera, Gujarat’s first and most ambitious smart city, is not just a
-          city—it's the future. Spanning over 920 sq. km and backed by the
-          Government of India, Dholera is built with a vision to become a global
-          economic powerhouse. With world-class infrastructure,
-          investor-friendly policies, and cutting-edge sustainability features,
-          Dholera offers a once-in-a-lifetime opportunity for real estate,
-          industrial, and technology investors. Whether you're looking to
-          invest, build, or settle, Dholera is where growth meets innovation.
+          Dholera is India’s most futuristic smart city, located in Gujarat. Spanning over 920 sq. km, Dholera is a flagship project under the DMIC and is fully supported by the Government of India. 
+          Designed with global infrastructure standards, smart governance, and green energy, Dholera offers unmatched{" "}
+          <strong className="text-green-700">investment opportunities in plots, real estate, and industrial zones</strong>.
+          Whether you are seeking residential land, commercial property, or industrial park investment, Dholera Smart City is the perfect destination.
         </p>
         <div className="text-center mt-8">
           <a
@@ -123,7 +118,7 @@ export default function HeroBanner() {
               >
                 <Image
                   src={src}
-                  alt={`Dholera View ${idx + 1}`}
+                  alt={`Dholera Smart City real estate project image ${idx + 1}`}
                   width={400}
                   height={256}
                   loading="lazy"

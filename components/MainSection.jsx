@@ -6,25 +6,25 @@ import React from "react";
 const MainSection = () => {
   const features = [
     {
-      title: "Smart Infrastructure",
-      text: "Seamless zoning, AI-powered utilities, and digital governance redefine futuristic living.",
+      title: "Smart Infrastructure in Dholera",
+      text: "Dholera Smart City offers cutting-edge real estate with AI-powered utilities, wide roads, fiber connectivity, and advanced zoning for commercial and residential plots.",
       img: "/images/smart-infra.jpg",
       color: "from-[#00796b] to-[#26a69a]",
-      alt: "Smart Infrastructure in Dholera",
+      alt: "Smart infrastructure for properties in Dholera Smart City",
     },
     {
-      title: "Investment Hub",
-      text: "With global attention and government backing, Dholera is an investor’s dream city.",
+      title: "Dholera – Investment Hotspot",
+      text: "With support from the Indian government and DMIC, Dholera is the most promising hub for real estate investment, industrial growth, and property development in Gujarat.",
       img: "/images/investment.jpg",
       color: "from-[#5d1049] to-[#ab47bc]",
-      alt: "Investment opportunities in Dholera",
+      alt: "Best plots and investment properties in Dholera",
     },
     {
-      title: "Sustainable Living",
-      text: "Built with solar energy, zero water waste, and eco-conscious design for tomorrow’s needs.",
+      title: "Sustainable Living Spaces",
+      text: "Live in an eco-friendly environment with solar grids, water recycling, and smart waste systems — perfect for residential plots and smart property development.",
       img: "/images/sustainability.jpg",
       color: "from-[#33691e] to-[#8bc34a]",
-      alt: "Sustainable living in Dholera",
+      alt: "Eco-friendly living and smart plots in Dholera Gujarat",
     },
   ];
 
@@ -33,21 +33,25 @@ const MainSection = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Hero Heading */}
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 tracking-tight leading-tight transition-all duration-700 ease-in-out">
-          Welcome to Dholera Smart City
+          Discover Plots, Properties & Investment Opportunities in Dholera Smart
+          City
         </h1>
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-[#1a535c] max-w-3xl mx-auto leading-relaxed mb-12 transition-all duration-700 ease-in-out">
-          Discover{" "}
+          Welcome to{" "}
           <strong className="font-semibold text-[#ff8800]">
-            India’s first greenfield smart city
+            DholeraGujarat.in
           </strong>
-          , built for innovation, sustainability, and unmatched urban living.
-          Dholera is transforming Gujarat’s landscape with{" "}
-          <span className="text-[#dd4c00] font-medium">
-            intelligent planning, smart utilities, and global investment
-          </span>
-          .
+          — your trusted platform for exploring premium{" "}
+          <strong className="text-[#00796b]">plots in Dholera</strong>, top{" "}
+          <strong className="text-[#00796b]">real estate opportunities</strong>,
+          and future-ready{" "}
+          <strong className="text-[#00796b]">
+            properties in Dholera Smart City
+          </strong>
+          . As India's first greenfield smart city, Dholera is designed with
+          innovation, sustainability, and global investment at its core.
         </p>
 
         {/* Feature Cards */}
@@ -68,8 +72,12 @@ const MainSection = () => {
                 />
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-bold mb-3 transition-all duration-700 ease-in-out">{card.title}</h2>
-                <p className="text-sm opacity-90 transition-all duration-700 ease-in-out">{card.text}</p>
+                <h2 className="text-2xl font-bold mb-3 transition-all duration-700 ease-in-out">
+                  {card.title}
+                </h2>
+                <p className="text-sm opacity-90 transition-all duration-700 ease-in-out">
+                  {card.text}
+                </p>
               </div>
             </div>
           ))}
@@ -79,7 +87,7 @@ const MainSection = () => {
         <div className="relative rounded-3xl overflow-hidden max-w-5xl mx-auto shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
           <Image
             src="/images/dholera_cityscape.webp"
-            alt="Aerial view of Dholera Smart City"
+            alt="Aerial view of plots, properties, and infrastructure in Dholera Smart City"
             width={1600}
             height={600}
             sizes="100vw"
@@ -90,10 +98,11 @@ const MainSection = () => {
           <div className="absolute inset-0 bg-opacity-30 flex items-end justify-start p-6 md:p-10 transition-all duration-700 ease-in-out">
             <div className="text-left">
               <h2 className="text-white text-2xl md:text-3xl font-bold transition-all duration-700 ease-in-out">
-                Vision of Tomorrow, Today
+                Build Your Future in Dholera
               </h2>
               <p className="text-white text-sm md:text-base mt-2 opacity-90 transition-all duration-700 ease-in-out">
-                Dholera is more than a city — it’s a smart ecosystem.
+                Buy residential and commercial plots in Gujarat’s most ambitious
+                smart city project — Dholera.
               </p>
             </div>
           </div>
