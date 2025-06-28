@@ -10,31 +10,37 @@ import 'swiper/css/pagination';
 
 const slides = [
   {
-    Image: '/images/slider/slider1.webp',
+    image: '/images/slider/slider1.webp',
     title: 'Real Estate that Reflects Your Vision',
     subtitle: 'Welcome to DholeraGujarat.in',
     text: 'Explore premium plots and properties in Dholera Smart City — crafted with care, delivered with precision.',
-    alt: 'Plots and properties in Dholera Smart City aerial view',
+    alt: 'Aerial view of plots and properties in Dholera Smart City',
+    blur: '/images/slider/blur/slider1-blur.jpg',
   },
   {
-    Image: '/images/slider/westwyngate.webp',
+    image: '/images/slider/westwyngate.webp',
     title: 'Our Blueprint to Build Your Dream',
     subtitle: 'Welcome to DholeraGujarat.in',
     text: 'Buy residential and commercial plots in Westwyn Gate – inspiring investment in Dholera real estate.',
-    alt: 'Clubhouse of Westwyn Gate, a property investment in Dholera',
+    alt: 'Clubhouse at Westwyn Gate, a real estate project in Dholera',
+    blur: '/images/slider/blur/westwyngate-blur.jpg',
   },
   {
-    Image: '/images/slider/paradise2.webp',
+    image: '/images/slider/paradise2.webp',
     title: 'Driving the Growth of Dholera Smart City',
     subtitle: 'Welcome to DholeraGujarat.in',
     text: 'Discover Paradise 2 – one of the top Dholera real estate projects for smart investors.',
-    alt: 'Paradise 2 project – gated entry of smart city property in Dholera',
+    alt: 'Paradise 2 gated entry – top smart city property in Dholera',
+    blur: '/images/slider/blur/paradise2-blur.jpg',
   },
 ];
 
 export default function HeroSlider() {
   return (
-    <section className="relative h-screen w-full overflow-hidden" aria-label="Featured Dholera Projects">
+    <section
+      className="relative w-full h-100vh overflow-hidden"
+      aria-label="Featured Dholera Real Estate Projects"
+    >
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         loop
@@ -47,24 +53,36 @@ export default function HeroSlider() {
           <SwiperSlide key={index}>
             <div className="relative w-full h-screen">
               <Image
-                src={slide.Image}
+                src={slide.image}
                 alt={slide.alt}
                 fill
-                style={{ objectFit: 'cover' }}
-                priority
+                sizes="100vw"
+                className="object-cover"
+                priority={index === 0}
+                placeholder="blur"
+                blurDataURL={slide.blur}
               />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white font-bold px-4">
-                <div className="p-8 rounded-xl max-w-2xl text-center space-y-4">
-                  <div className="text-lg tracking-wider uppercase">{slide.subtitle}</div>
-                  <h2 className="text-3xl font-bold">{slide.title}</h2>
-                  <p className="italic text-lg">{slide.text}</p>
-                </div>
+
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white px-4">
+                <article
+                  className="p-6 sm:p-8 rounded-xl max-w-2xl text-center space-y-4"
+                  aria-label={`Slide content: ${slide.title}`}
+                >
+                  <p className="text-base sm:text-lg tracking-wider uppercase">
+                    {slide.subtitle}
+                  </p>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                    {slide.title}
+                  </h1>
+                  <p className="italic text-sm sm:text-base md:text-lg">
+                    {slide.text}
+                  </p>
+                </article>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
     </section>
   );
 }
