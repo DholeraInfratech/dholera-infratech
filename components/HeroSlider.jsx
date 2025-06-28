@@ -10,21 +10,21 @@ import 'swiper/css/pagination';
 
 const slides = [
   {
-    img: '/images/slider/slider1.png',
+    Image: '/images/slider/slider1.webp',
     title: 'Real Estate that Reflects Your Vision',
     subtitle: 'Welcome to DholeraGujarat.in',
     text: 'Explore premium plots and properties in Dholera Smart City — crafted with care, delivered with precision.',
     alt: 'Plots and properties in Dholera Smart City aerial view',
   },
   {
-    img: '/images/slider/westwyngate.png',
+    Image: '/images/slider/westwyngate.webp',
     title: 'Our Blueprint to Build Your Dream',
     subtitle: 'Welcome to DholeraGujarat.in',
     text: 'Buy residential and commercial plots in Westwyn Gate – inspiring investment in Dholera real estate.',
     alt: 'Clubhouse of Westwyn Gate, a property investment in Dholera',
   },
   {
-    img: '/images/slider/paradise2.png',
+    Image: '/images/slider/paradise2.webp',
     title: 'Driving the Growth of Dholera Smart City',
     subtitle: 'Welcome to DholeraGujarat.in',
     text: 'Discover Paradise 2 – one of the top Dholera real estate projects for smart investors.',
@@ -47,11 +47,11 @@ export default function HeroSlider() {
           <SwiperSlide key={index}>
             <div className="relative w-full h-screen">
               <Image
-                src={slide.img}
+                src={slide.Image}
                 alt={slide.alt}
                 fill
                 style={{ objectFit: 'cover' }}
-                priority={index === 0}
+                priority
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white font-bold px-4">
                 <div className="p-8 rounded-xl max-w-2xl text-center space-y-4">
