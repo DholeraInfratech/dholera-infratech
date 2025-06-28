@@ -1,4 +1,3 @@
-// HeroSlider.jsx
 'use client';
 
 import Image from 'next/image';
@@ -38,7 +37,7 @@ const slides = [
 export default function HeroSlider() {
   return (
     <section
-      className="relative w-full h-100vh overflow-hidden"
+      className="relative w-full min-h-screen overflow-hidden"
       aria-label="Featured Dholera Real Estate Projects"
     >
       <Swiper
@@ -51,21 +50,22 @@ export default function HeroSlider() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-screen">
+            <div className="relative w-full min-h-screen">
               <Image
                 src={slide.image}
                 alt={slide.alt}
                 fill
                 sizes="100vw"
-                className="object-cover"
                 priority={index === 0}
                 placeholder="blur"
                 blurDataURL={slide.blur}
+                className="object-cover"
               />
 
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white px-4">
+              {/* Overlay Content */}
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center px-4">
                 <article
-                  className="p-6 sm:p-8 rounded-xl max-w-2xl text-center space-y-4"
+                  className="text-white max-w-2xl text-center space-y-4 p-6 sm:p-8 rounded-xl"
                   aria-label={`Slide content: ${slide.title}`}
                 >
                   <p className="text-base sm:text-lg tracking-wider uppercase">
