@@ -4,6 +4,7 @@ import { UserProvider } from "@/context/UserContext";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Load WhatsApp button only on client (avoids blocking main thread)
 const WhatsAppFloatingButton = dynamic(() => import("@/components/WhatsAppFloatingButton"), {
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
       <WhatsAppFloatingButton />
     </UserProvider>
   );
