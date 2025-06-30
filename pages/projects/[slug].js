@@ -161,23 +161,50 @@ export default function ProjectDetail({ project }) {
   return (
     <>
       <Head>
-        <title>{project.name} - Dholera Project Details</title>
+        <title>{`${project.name} - Dholera Project Details | DholeraGujarat.in`}</title>
         <meta name="description" content={project.description} />
+        <meta
+          name="keywords"
+          content={`${project.name}, Dholera project, Dholera plots, investment in Dholera, Dholera SIR, smart city Gujarat`}
+        />
+        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="robots" content="index, follow" />
+
         <link
           rel="canonical"
           href={`https://dholeragujarat.in/projects/${project.slug}`}
         />
+
+        {/* Open Graph for Facebook & WhatsApp */}
         <meta
           property="og:title"
           content={`${project.name} - Dholera Project`}
         />
         <meta property="og:description" content={project.description} />
-        <meta property="og:image" content={project.image} />
+        <meta
+          property="og:image"
+          content={`https://dholeragujarat.in${project.image}`}
+        />
         <meta
           property="og:url"
           content={`https://dholeragujarat.in/projects/${project.slug}`}
         />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={`${project.name} - Dholera Project`}
+        />
+        <meta name="twitter:description" content={project.description} />
+        <meta
+          name="twitter:image"
+          content={`https://dholeragujarat.in${project.image}`}
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>
 
       <Navbar />

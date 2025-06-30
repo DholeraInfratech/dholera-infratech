@@ -12,11 +12,6 @@ const WhatsAppFloatingButton = dynamic(() => import("@/components/WhatsAppFloati
   loading: () => null,
 });
 
-const HeroSlider = dynamic(() => import('@/components/HeroSlider'), {
-  ssr: false, // client-side only
-  loading: () => <div className="min-h-screen bg-black/10" />, // fallback
-});
-
 export default function App({ Component, pageProps }) {
   return (
     <UserProvider>

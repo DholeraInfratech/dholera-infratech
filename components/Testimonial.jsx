@@ -11,37 +11,37 @@ const testimonials = [
     name: "Rajesh Patel",
     role: "Real Estate Investor, Mumbai",
     quote: "Dholera is the best investment decision I’ve made. The infrastructure and growth potential are unmatched in India. I’ve already seen 2x return in just 3 years.",
-    image: "/images/testimonial1.jpg",
+    image: "/images/testimonial1.webp",
   },
   {
     name: "Meera Shah",
     role: "Tech Entrepreneur",
     quote: "We’re establishing our solar tech plant in Dholera. It’s a futuristic city with smart grids, dedicated industrial corridors, and zero red tape.",
-    image: "/images/testimonial2.jpg",
+    image: "/images/testimonial2.webp",
   },
   {
     name: "Anil Mehta",
     role: "NRI Investor, USA",
     quote: "Looking for a future-proof investment in India? Dholera is the answer. It’s smart, green, globally connected—and it's just getting started.",
-    image: "/images/testimonial3.jpg",
+    image: "/images/testimonial3.webp",
   },
   {
     name: "Pooja Verma",
     role: "Architect, Ahmedabad",
     quote: "I was amazed by the eco-planning, walkable city design, and clean infrastructure. Dholera is the city India needs for its future.",
-    image: "/images/testimonial4.jpg",
+    image: "/images/testimonial4.webp",
   },
   {
     name: "Sameer Khan",
     role: "Startup Founder",
     quote: "We're moving our HQ to Dholera. With smart facilities, high-speed internet, and a thriving business ecosystem—it’s a no-brainer.",
-    image: "/images/testimonial5.jpg",
+    image: "/images/testimonial5.webp",
   },
   {
     name: "Neha Joshi",
     role: "Environmentalist",
     quote: "As someone who values sustainability, Dholera’s green cover, renewable energy systems, and water reuse plants won me over.",
-    image: "/images/testimonial6.jpg",
+    image: "/images/testimonial6.webp",
   },
 ];
 

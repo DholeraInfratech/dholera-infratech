@@ -62,7 +62,7 @@ export default function About() {
         {/* Hero Section */}
         <div className="relative w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[500px]">
           <Image
-            src="/images/dholera-banner.jpg"
+            src="/images/dholera-banner.webp"
             alt="Dholera Smart City Banner"
             fill
             className="object-cover"

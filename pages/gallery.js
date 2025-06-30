@@ -17,43 +17,27 @@ const projects = [
   {
     name: "Paradise 2",
     slug: "paradise-2",
-    images: [
-      "/images/paradise2-1.png",
-       "/images/paradise2-2.png"
-      ],
+    images: ["/images/paradise2-1.png", "/images/paradise2-2.png"],
   },
   {
     name: "Orchid Township",
     slug: "orchid-township",
-    images: [
-      "/images/orchid.png",
-      "/images/orchid2.png",
-    ],
+    images: ["/images/orchid.png", "/images/orchid2.png"],
   },
   {
     name: "Paradise",
     slug: "paradise",
-    images: [
-      "/images/paradise.png",
-      "/images/paradise2.png",
-    ],
-    
+    images: ["/images/paradise.png", "/images/paradise2.png"],
   },
   {
     name: "Maple",
     slug: "maple",
-    images: [
-      "/images/maple.png",
-      "/images/maple2.png",
-    ],
+    images: ["/images/maple.png", "/images/maple2.png"],
   },
   {
     name: "Marina Bay",
     slug: "marina-bay",
-    images: [
-      "/images/marina-bay.png",
-      "/images/marina-bay2.png",
-    ],
+    images: ["/images/marina-bay.png", "/images/marina-bay2.png"],
   },
   {
     name: "WestWyn County",
@@ -72,19 +56,58 @@ export default function Gallery() {
   return (
     <>
       <Head>
-        <title>Dholera Project Gallery | Investment Plots in Gujarat</title>
+        <title>
+          Dholera Project Gallery | Smart City Images & Investment Plots in Gujarat
+        </title>
+
         <meta
           name="description"
-          content="Browse high-potential investment projects in Dholera Smart City. View plot layouts, premium locations, and project visuals."
+          content="Explore high-resolution images of Dholera Smart City projects, including premium plots, township layouts, and infrastructure developments. See why Dholera SIR is Gujarat's top real estate investment zone."
         />
-        <meta property="og:title" content="Dholera Real Estate Gallery" />
+        <meta
+          name="keywords"
+          content="Dholera images, Dholera project photos, Dholera Smart City gallery, Dholera SIR images, investment plots in Dholera, Dholera real estate pictures, Dholera infrastructure, Gujarat smart city plots"
+        />
+        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.dholeragujarat.in/gallery" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Dholera Real Estate Gallery | Project Photos & Plot Visuals"
+        />
         <meta
           property="og:description"
-          content="Explore premium real estate projects in Dholera SIR with plot images and investment highlights."
+          content="Discover Dholera Smart City through detailed project images, plot maps, and township visuals. Perfect for real estate investors and smart city enthusiasts."
         />
-        <meta property="og:image" content="/images/dholera-projects-image.jpg" />
+        <meta
+          property="og:image"
+          content="https://www.dholeragujarat.in/images/dholera-projects-image.jpg"
+        />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.dholeragujarat.in/gallery"
+        />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Dholera Project Gallery | Smart City Investment Visuals"
+        />
+        <meta
+          name="twitter:description"
+          content="See plot layouts, location maps, and smart infrastructure photos from Dholera SIR’s premium real estate projects."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.dholeragujarat.in/images/dholera-projects-image.jpg"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>
 
       <Navbar />
@@ -96,7 +119,10 @@ export default function Gallery() {
 
         <section className="max-w-4xl mx-auto text-center mb-12 text-gray-700">
           <p className="text-lg leading-relaxed">
-            Discover top residential and commercial plot developments in Dholera SIR. With strategic infrastructure, airport connectivity, and rising land value, these projects offer smart investment opportunities for early movers.
+            Discover top residential and commercial plot developments in Dholera
+            SIR. With strategic infrastructure, airport connectivity, and rising
+            land value, these projects offer smart investment opportunities for
+            early movers.
           </p>
         </section>
 

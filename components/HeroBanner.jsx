@@ -30,12 +30,12 @@ export default function HeroBanner() {
   ];
 
   const galleryImages = [
-    "/images/dholera1.jpg",
-    "/images/dholera2.jpg",
-    "/images/dholera3.jpg",
-    "/images/dholera4.jpg",
-    "/images/dholera5.jpg",
-    "/images/dholera6.jpg",
+    "/images/dholera1.webp",
+    "/images/dholera2.webp",
+    "/images/dholera3.webp",
+    "/images/dholera4.webp",
+    "/images/dholera5.webp",
+    "/images/dholera6.webp",
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function HeroBanner() {
       {/* Hero Section */}
       <div className="relative h-[400px] flex items-center justify-center">
         <Image
-          src="/images/slider/dholerabg.png"
+          src="/images/slider/dholerabg.webp"
           alt="Dholera Smart City - Invest in Gujarat's Future"
           fill
           priority

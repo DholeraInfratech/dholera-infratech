@@ -25,7 +25,7 @@ const blogPosts = [
     author: "Admin",
   },
   {
-    title: "Top 5 Real Estate Projects in Dholera You Should Know",
+    title: "Top  Real Estate Projects in Dholera You Should Know",
     slug: "top-real-estate-projects",
     excerpt:
       "From Paradise 2 to WestWyn County — here are the must-know investment opportunities in Dholera.",
@@ -49,37 +49,54 @@ export default function Blog() {
     <>
       <Head>
         <title>
-          Dholera Smart City Blog | Real Estate Insights & Investment News
+          Dholera Smart City Blog | Real Estate Insights, Plots & Investment News
         </title>
+
         <meta
           name="description"
-          content="Read expert articles, market trends, and smart infrastructure updates on Dholera SIR – India’s top investment-ready smart city. Stay informed with the latest news and real estate insights."
+          content="Explore real estate insights, investment news, infrastructure updates, and government developments in Dholera Smart City. Discover top plots and property trends in India's first smart city."
         />
         <meta
+          name="keywords"
+          content="Dholera Smart City blog, Dholera Blogs, Dholera blog, Dholera real estate, Dholera investment, Dholera plots, Dholera SIR updates, Dholera infrastructure news, Dholera property market, smart city India"
+        />
+        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph / Facebook */}
+        <meta
           property="og:title"
-          content="Dholera Smart City Blog | Real Estate Insights & News"
+          content="Dholera Smart City Blog | Real Estate Insights & Investment News"
         />
         <meta
           property="og:description"
-          content="Stay ahead with the latest updates on Dholera Smart City real estate. Discover investment opportunities, infrastructure plans, and development news."
+          content="Stay updated on Dholera SIR with expert articles on real estate trends, smart infrastructure, plot investments, and development news."
         />
         <meta property="og:image" content="/images/dholera-blog-banner.jpg" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dholeragujarat.in/blog" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dholera Smart City Blog" />
+        <meta
+          name="twitter:title"
+          content="Dholera Smart City Blog | Real Estate Insights"
+        />
         <meta
           name="twitter:description"
-          content="Latest real estate news, trends, and investment tips in Dholera SIR."
+          content="Get expert updates on Dholera plots, smart city infrastructure, and investment opportunities from India's top upcoming development."
         />
         <meta name="twitter:image" content="/images/dholera-blog-banner.jpg" />
+
         <link rel="canonical" href="https://www.dholeragujarat.in/blog" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>
-      <Navbar/>
+
+      <Navbar />
 
       {/* Hero Header */}
-      <section
-        className="bg-gradient-to-br from-[#e1e3dbcc] via-[#d0d8c5] to-[#8e8f88] py-20 text-black text-center"
-      >
+      <section className="bg-gradient-to-br from-[#e1e3dbcc] via-[#d0d8c5] to-[#8e8f88] py-20 text-black text-center">
         <h1 className="text-5xl font-extrabold mb-4 uppercase drop-shadow-md">
           Dholera Smart City Blog
         </h1>
