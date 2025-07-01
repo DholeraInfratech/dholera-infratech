@@ -74,7 +74,7 @@ export default function Blog() {
         />
         <meta property="og:image" content="/images/dholera-blog-banner.jpg" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dholeragujarat.in/blog" />
+        <meta property="og:url" content="https://dholeragujarat.in/blog" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -88,7 +88,7 @@ export default function Blog() {
         />
         <meta name="twitter:image" content="/images/dholera-blog-banner.jpg" />
 
-        <link rel="canonical" href="https://www.dholeragujarat.in/blog" />
+        <link rel="canonical" href="https://dholeragujarat.in/blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>

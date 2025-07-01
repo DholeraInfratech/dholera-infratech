@@ -70,7 +70,7 @@ export default function Gallery() {
         />
         <meta name="author" content="DholeraGujarat.in" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.dholeragujarat.in/gallery" />
+        <link rel="canonical" href="https://dholeragujarat.in/gallery" />
 
         {/* Open Graph / Facebook */}
         <meta
@@ -83,12 +83,12 @@ export default function Gallery() {
         />
         <meta
           property="og:image"
-          content="https://www.dholeragujarat.in/images/dholera-projects-image.jpg"
+          content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://www.dholeragujarat.in/gallery"
+          content="https://dholeragujarat.in/gallery"
         />
 
         {/* Twitter */}
@@ -103,7 +103,7 @@ export default function Gallery() {
         />
         <meta
           name="twitter:image"
-          content="https://www.dholeragujarat.in/images/dholera-projects-image.jpg"
+          content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -31,9 +31,9 @@ export default function About() {
           content="Explore Dholera Smart City and discover investment opportunities, smart infrastructure, and future-ready real estate developments in Gujarat."
         />
         <meta property="og:image" content="/images/dholera-banner.jpg" />
-        <meta property="og:url" content="https://www.dholeragujarat.in/about" />
+        <meta property="og:url" content="https://dholeragujarat.in/about" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://www.dholeragujarat.in/about" />
+        <link rel="canonical" href="https://dholeragujarat.in/about" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <script
           type="application/ld+json"
@@ -42,7 +42,7 @@ export default function About() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: "About Dholera Smart City",
-              url: "https://www.dholeragujarat.in/about",
+              url: "https://dholeragujarat.in/about",
               description:
                 "DholeraGujarat.in offers insights into India’s largest planned smart city - Dholera. Learn about real estate investments, infrastructure, and future growth opportunities.",
               publisher: {
@@ -50,7 +50,7 @@ export default function About() {
                 name: "DholeraGujarat.in",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://www.dholeragujarat.in/images/dholera_gujarat_logo.ico",
+                  url: "https://dholeragujarat.in/images/dholera_gujarat_logo.ico",
                 },
               },
             }),
