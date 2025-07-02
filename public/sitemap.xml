@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Static pages -->
+  <url><loc>https://dholeragujarat.in/</loc><priority>1.00</priority></url>
+  <url><loc>https://dholeragujarat.in/about</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/projects</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/contact</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/blog</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/gallery</loc><priority>0.64</priority></url>
+  <!-- <url><loc>https://dholeragujarat.in/login</loc><priority>0.64</priority></url> -->
+  <!-- <url><loc>https://dholeragujarat.in/register</loc><priority>0.64</priority></url> -->
+  <!-- <url><loc>https://dholeragujarat.in/authpage</loc><priority>0.50</priority></url> -->
+
+  <!-- Blog posts -->
+  <url><loc>https://dholeragujarat.in/blog/dholera-airport-phase1</loc><priority>0.64</priority></url>
+  <url><loc>https://dholeragujarat.in/blog/dholera-infra-investment-2025</loc><priority>0.64</priority></url>
+  <url><loc>https://dholeragujarat.in/blog/dholera-land-price-surge</loc><priority>0.64</priority></url>
+  <url><loc>https://dholeragujarat.in/blog/dholera-land-price-trends-2025</loc><priority>0.64</priority></url>
+  <url><loc>https://dholeragujarat.in/blog/dholera-sir-economy</loc><priority>0.64</priority></url>
+  <url><loc>https://dholeragujarat.in/blog/dholera-smart-city</loc><priority>0.64</priority></url>
+  <url><loc>https://dholeragujarat.in/blog/top-real-estate-projects</loc><priority>0.64</priority></url>
+
+  <!-- Projects -->
+  <url><loc>https://dholeragujarat.in/projects/paradise</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/projects/paradise-2</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/projects/orchid-township</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/projects/maple</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/projects/marina-bay</loc><priority>0.80</priority></url>
+  <url><loc>https://dholeragujarat.in/projects/westwyn-county</loc><priority>0.80</priority></url>
+
+</urlset>

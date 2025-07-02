@@ -96,7 +96,7 @@ const Footer = () => (
             {
               icon: "fa-instagram",
               label: "Instagram",
-              link: "https://www.instagram.com/dholeragujaratestates/",
+              link: "https://www.instagram.com/dholerainfratech/",
             },
             {
               icon: "fa-linkedin",

@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.dholeragujarat.in"
+        }
+      ],
+      "destination": "https://dholeragujarat.in/:1",
+      "permanent": true
+    }
+  ]
+}
