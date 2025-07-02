@@ -30,7 +30,7 @@ export default function About() {
           property="og:description"
           content="Explore Dholera Smart City and discover investment opportunities, smart infrastructure, and future-ready real estate developments in Gujarat."
         />
-        <meta property="og:image" content="/images/dholera-banner.jpg" />
+        <meta property="og:image" content="/images/dholera-og.jpg" />
         <meta property="og:url" content="https://dholeragujarat.in/about" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://dholeragujarat.in/about" />

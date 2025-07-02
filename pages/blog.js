@@ -58,7 +58,7 @@ export default function Blog() {
         />
         <meta
           name="keywords"
-          content="Dholera Smart City blog, Dholera Blogs, Dholera blog, Dholera real estate, Dholera investment, Dholera plots, Dholera SIR updates, Dholera infrastructure news, Dholera property market, smart city India"
+          content="Dholera Smart City blog, Dholera Blogs, Dholera blog, Dholera real estate news, Dholera investment, Dholera plots, Dholera SIR updates, Dholera infrastructure news, Dholera property market, smart city India , dholera news, dholera blogs,dholera blogs,dholera investment news,dholera real estate news, dholera updated news, dholera updates"
         />
         <meta name="author" content="DholeraGujarat.in" />
         <meta name="robots" content="index, follow" />

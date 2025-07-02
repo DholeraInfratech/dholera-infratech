@@ -37,7 +37,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Dholera, dholera , Dholera Smart City, Plots in Dholera, Properties in Dholera, Dholera Real Estate, Dholera Investment, Dholera Projects, Dholera Gujarat, dholera plots, plots in dholera, dholera properties, dholera smart city, dholera real estate, dholera investment, dholera projects, dholera gujarat"
+          content="Dholera, dholera , Dholera Smart City, Plots in Dholera, Properties in Dholera, Dholera Real Estate, Dholera Investment, Dholera Projects, Dholera Gujarat, dholera plots, plots in dholera, dholera properties, dholera smart city, dholera real estate, dholera investment, dholera projects, dholera gujarat , dholera real estate projects, dholera smart city projects, dholera residential plots, dholera commercial plots, dholera property listings ,dholeragujarat"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -50,11 +50,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
+          content="https://dholeragujarat.in/images/dholera-og.jpg"
         />
         <meta property="og:url" content="https://dholeragujarat.in/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="./images/dholera_gujarat_logo.ico" />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <link rel="canonical" href="https://dholeragujarat.in/" />
       </Head>
       <Navbar onLoginClick={() => setShowModal(true)} userName={userName} />

@@ -66,7 +66,7 @@ export default function Gallery() {
         />
         <meta
           name="keywords"
-          content="Dholera images, Dholera project photos, Dholera Smart City gallery, Dholera SIR images, investment plots in Dholera, Dholera real estate pictures, Dholera infrastructure, Gujarat smart city plots"
+          content="Dholera images, Dholera project photos, Dholera Smart City gallery, Dholera SIR images, investment plots in Dholera, Dholera real estate pictures, Dholera infrastructure, Gujarat smart city plots, dholera images, dholera photos , dholera smart city photos, dholera project images, dholera sir photos, dholera real estate images, dholera investment plots, dholera smart city infrastructure, dholera smart city projects, dholera smart city gallery, dholera sir images, dholera sir photos, dholera sir projects, dholera sir gallery"
         />
         <meta name="author" content="DholeraGujarat.in" />
         <meta name="robots" content="index, follow" />
