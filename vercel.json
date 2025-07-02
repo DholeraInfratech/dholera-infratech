@@ -1,14 +1,14 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "www.dholeragujarat.in"
         }
       ],
-      "destination": "https://dholeragujarat.in/:1",
+      "destination": "https://dholeragujarat.in/:path*",
       "statusCode": 308
     }
   ]
