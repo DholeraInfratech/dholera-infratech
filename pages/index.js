@@ -37,7 +37,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Dholera, dholera , Dholera Smart City, Plots in Dholera, Properties in Dholera, Dholera Real Estate, Dholera Investment, Dholera Projects, Dholera Gujarat, dholera plots, plots in dholera, dholera properties, dholera smart city, dholera real estate, dholera investment, dholera projects, dholera gujarat , dholera real estate projects, dholera smart city projects, dholera residential plots, dholera commercial plots, dholera property listings ,dholeragujarat"
+          content="Dholera,Dholera SIR,dholera sir,dholera sir gujarat,dholera,Dholera Smart City,Plots in Dholera,Properties in Dholera,Dholera Real Estate,Dholera Investment,Dholera Projects,Dholera Gujarat,dholera plots,plots in dholera,dholera properties,dholera smart city,dholera real estate,dholera investment,dholera projects,dholera gujarat,dholera real estate projects,dholera smart city projects,dholera residential plots,dholera commercial plots,dholera property listings,dholeragujarat"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta

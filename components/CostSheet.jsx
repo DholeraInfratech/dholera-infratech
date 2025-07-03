@@ -52,8 +52,8 @@ export default function CostSheet() {
     const plotAmount = area * rate;
     const devAmount = area * devRate;
     const plcAmount = area * plcRate;
-    const addCharges = devAmount  + maintenance + legal;
-    const totalPayable = plotAmount  + plcAmount + addCharges;
+    const addCharges = devAmount + maintenance + legal;
+    const totalPayable = plotAmount + plcAmount + addCharges;
 
     setTotals({
       plotAmount,
@@ -187,6 +187,10 @@ export default function CostSheet() {
     drawRow("Basic Selling Price (Sq.Yard)", plot.rate);
     drawRow(`PLC Amount (${charges.plcPerYd} per Sq.Yard)`, totals.plcAmount);
     drawRow("Plot Amount", totals.plotAmount);
+    drawRow(
+      "Total Plot Charges (Plot Amount + PLC)",
+      totals.plotAmount + totals.plcAmount
+    );
 
     // ==== Additional Charges ====
     drawSectionHeader("Additional Charges");
@@ -333,6 +337,10 @@ export default function CostSheet() {
           onChange={handleChange(setCharges)}
         />
         <Readonly label="PLC Amount" value={totals.plcAmount} />
+        <Readonly
+          label="Total Plot Charges (Plot Amount + PLC Amount)"
+          value={totals.plotAmount + totals.plcAmount}
+        />
       </Section>
 
       <Section title="Additional Charges">
