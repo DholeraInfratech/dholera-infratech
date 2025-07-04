@@ -57,6 +57,22 @@ export default function Home() {
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <link rel="canonical" href="https://dholeragujarat.in/" />
         <meta name="robots" content="index, follow" />
+
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Dholera Smart City Real Estate",
+          "url": "https://dholeragujarat.in/",
+          "description": "Explore Dholera Smart City plots and real estate investment opportunities in Gujarat. Government-approved residential and commercial properties with high ROI potential.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "DholeraGujarat.in"
+          }
+        }
+        `}
+        </script>
       </Head>
       <Navbar onLoginClick={() => setShowModal(true)} userName={userName} />
       <HeroSlider />

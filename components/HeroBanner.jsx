@@ -51,9 +51,9 @@ export default function HeroBanner() {
         />
         <div className="absolute inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center">
           <div className="px-8 py-6 rounded-2xl text-center shadow-lg max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow mb-3">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow mb-3">
               Invest in Dholera Smart City
-            </h2>
+            </h1>
             <p className="text-lg text-gray-100 leading-relaxed drop-shadow">
               Explore top plots and properties in India’s First Greenfield Smart City — a government-backed infrastructure marvel in Gujarat.
             </p>
