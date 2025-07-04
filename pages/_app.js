@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }) {
 
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />

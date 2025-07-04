@@ -37,7 +37,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Dholera,Dholera SIR,dholera sir,dholera sir gujarat,dholera,Dholera Smart City,Plots in Dholera,Properties in Dholera,Dholera Real Estate,Dholera Investment,Dholera Projects,Dholera Gujarat,dholera plots,plots in dholera,dholera properties,dholera smart city,dholera real estate,dholera investment,dholera projects,dholera gujarat,dholera real estate projects,dholera smart city projects,dholera residential plots,dholera commercial plots,dholera property listings,dholeragujarat"
+          content="Dholera,Dholera SIR,dholera sir,dholera sir gujarat,dholera,Dholera Smart City,Plots in Dholera,Properties in Dholera,Dholera Real Estate,Dholera Investment,Dholera Projects,Dholera Gujarat,dholera plots,plots in dholera,dholera properties,dholera smart city,dholera real estate,dholera investment,dholera projects,dholera gujarat,dholera real estate projects,dholera smart city projects,dholera residential plots,dholera commercial plots,dholera property listings,dholeragujarat,best property dealer in dholera,best real estate agent in dholera,dholera best properties,dholera smart city property,dholera smart city plots,best plots in dholera,best properties in dholera,dholera smart city investment,dholera smart city news,dholera development news,dholera smart city updates"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -56,6 +56,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <link rel="canonical" href="https://dholeragujarat.in/" />
+        <meta name="robots" content="index, follow" />
       </Head>
       <Navbar onLoginClick={() => setShowModal(true)} userName={userName} />
       <HeroSlider />

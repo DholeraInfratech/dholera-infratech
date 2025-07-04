@@ -34,6 +34,7 @@ export default function About() {
         <meta property="og:url" content="https://dholeragujarat.in/about" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://dholeragujarat.in/about" />
+        <meta name="robots" content="index, follow" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <script
           type="application/ld+json"
