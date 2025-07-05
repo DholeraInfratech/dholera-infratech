@@ -50,7 +50,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/dholera-og.jpg"
+          content="https://dholeragujarat.in/images/dholera-og.webp"
         />
         <meta property="og:url" content="https://dholeragujarat.in/" />
         <meta name="twitter:card" content="summary_large_image" />

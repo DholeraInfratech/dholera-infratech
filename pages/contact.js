@@ -68,12 +68,68 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>Contact Us - DholeraGujarat.in</title>
-        <meta name="description" content="Get in touch with us for any inquiries or investment regarding Dholera Smart City." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
-      </Head>
+     import Head from "next/head";
+
+<Head>
+  <title>Contact Us | Dholera Smart City Plots & Real Estate - DholeraGujarat.in</title>
+  <meta
+    name="description"
+    content="Contact DholeraGujarat.in for expert guidance on investing in Dholera Smart City. Reach us for queries about residential and commercial plots, property rates, and site visits."
+  />
+  <meta
+    name="keywords"
+    content="Dholera Contact, Contact Dholera Gujarat, Dholera Smart City Contact, Plots in Dholera, Property Dealer Dholera, Investment in Dholera, Dholera Real Estate"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
+  <link rel="canonical" href="https://dholeragujarat.in/contact" />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Us | Dholera Smart City Plots & Investment" />
+  <meta
+    property="og:description"
+    content="Get in touch with DholeraGujarat.in to explore top real estate opportunities in Dholera Smart City. Ask about plot prices, locations, and investment options."
+  />
+  <meta property="og:url" content="https://dholeragujarat.in/contact" />
+  <meta property="og:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Dholera Smart City Real Estate" />
+  <meta
+    name="twitter:description"
+    content="Speak to our Dholera property experts. Contact us today for real estate investment opportunities in Dholera SIR and Smart City projects."
+  />
+  <meta name="twitter:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
+
+  {/* Structured Data - ContactPage */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "DholeraGujarat.in",
+        "url": "https://dholeragujarat.in",
+        "logo": "https://dholeragujarat.in/images/dholera_gujarat_logo.ico",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9540561820",
+          "contactType": "Customer Service",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi", "Gujarati"]
+        }
+      },
+      "url": "https://dholeragujarat.in/contact",
+      "description": "Contact us for property bookings, site visits, and investment opportunities in Dholera Smart City, Gujarat."
+    }
+    `}
+  </script>
+</Head>
+
       <Navbar />
       <section className="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] py-20 px-4">
         <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-lg p-10 rounded-2xl shadow-2xl border border-white/10">

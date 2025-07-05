@@ -84,7 +84,7 @@ export default function Gallery() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
+          content="https://dholeragujarat.in/images/dholera-projects-image.webp"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dholeragujarat.in/gallery" />
@@ -101,7 +101,7 @@ export default function Gallery() {
         />
         <meta
           name="twitter:image"
-          content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
+          content="https://dholeragujarat.in/images/dholera-projects-image.webp"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />

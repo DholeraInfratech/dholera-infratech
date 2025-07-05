@@ -94,22 +94,127 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Dholera Real Estate Projects | Plots in Dholera Smart City</title>
+        <title>
+          Dholera Real Estate Projects | Plots in Dholera Smart City
+        </title>
+
         <meta
           name="description"
           content="Explore top real estate projects in Dholera Smart City including residential plots, smart townships, and high-return investment opportunities."
         />
-        <meta name="keywords" content="Dholera Projects, Dholera Smart City, Buy Plots Dholera, Residential Projects Dholera, WestWyn County, Dholera Investment" />
+
+        <meta
+          name="keywords"
+          content="Dholera Projects, Dholera Smart City, Buy Plots Dholera, Residential Projects Dholera, WestWyn County, Paradise 2, Orchid Township, Maple, Marina Bay, Paradise, Dholera Investment ,Dholera Projects, Dholera Smart City, Buy Plots Dholera, Residential Projects Dholera, WestWyn County,
+          Paradise 2 Dholera, Orchid Township, Maple Dholera, Marina Bay Dholera, Paradise Project Dholera,
+          Dholera Real Estate, Dholera Property, Dholera Land for Sale, Dholera Investment, Dholera Plots for Sale,
+          Affordable Plots Dholera, Dholera Commercial Plots, Dholera Residential Plots, Dholera Township Projects,
+          Dholera Smart City Investment, Dholera Property Developer, Dholera Real Estate Projects 2025,
+          Dholera New Projects, Buy Plot in Dholera Gujarat, Dholera SIR Projects, Dholera Land Price,
+          Dholera Real Estate Market, Dholera Land Investment, Dholera Property Listings, Dholera Smart City Plots,
+          Dholera Project Updates"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Dholera Real Estate Projects" />
         <meta
           property="og:description"
-          content="View our exclusive residential projects in Dholera Smart City including WestWyn County, Paradise, Orchid Township, and more."
+          content="View our exclusive residential projects in Dholera Smart City including WestWyn County, Paradise, Orchid Township, Maple, Marina Bay, and more."
         />
-        <meta property="og:image" content="/images/westwyn-banner.jpg" />
-        <meta property="og:url" content="https://yourdomain.com/projects" />
+        <meta
+          property="og:image"
+          content="https://dholeragujarat.in/images/westwyn-banner.webp"
+        />
+        <meta property="og:url" content="https://dholeragujarat.in/projects" />
+
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://yourdomain.com/projects" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="twitter:title" content="Dholera Real Estate Projects" />
+        <meta
+          name="twitter:description"
+          content="Explore premium residential projects in Dholera Smart City including WestWyn County, Paradise, Orchid Township, Maple, Marina Bay and more."
+        />
+        <meta
+          name="twitter:image"
+          content="https://dholeragujarat.in/images/westwyn-banner.webp"
+        />
+
+        <link rel="canonical" href="https://dholeragujarat.in/projects" />
+
+        {/* Structured Data: CollectionPage with all projects */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Dholera Real Estate Projects",
+      "description": "Explore premium residential and commercial projects in Dholera Smart City including WestWyn County, Paradise, Orchid Township, Maple, Marina Bay, and more.",
+      "url": "https://dholeragujarat.in/projects",
+      "publisher": {
+        "@type": "Organization",
+        "name": "DholeraGujarat.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dholeragujarat.in/images/dholera_gujarat_logo.ico"
+        }
+      },
+      "mainEntity": [
+        {
+          "@type": "Project",
+          "name": "WestWyn County",
+          "url": "https://dholeragujarat.in/projects/westwyn-county",
+          "image": "https://dholeragujarat.in/images/westwyn-banner.webp",
+          "description": "WestWyn County is Dholera’s most promising smart investment opportunity with solar-ready plots, legal clearances, EV-ready infrastructure, and gated community features.",
+          "status": "Available",
+        },
+        {
+          "@type": "Project",
+          "name": "Paradise 2",
+          "url": "https://dholeragujarat.in/projects/paradise-2",
+          "image": "https://dholeragujarat.in/images/paradise2-1.webp",
+          "description": "Paradise 2 offers a unique blend of luxury and affordability, making it an ideal choice for smart investors.",
+          "status": "sold-out",
+        },
+        {
+          "@type": "Project",
+          "name": "Orchid Township",
+          "url": "https://dholeragujarat.in/projects/orchid-township",
+          "image": "https://dholeragujarat.in/images/orchid.webp",
+          "description": "Orchid Township is designed for modern living with eco-friendly features and smart city amenities.",
+          "status": "sold-out",
+        },
+        {
+          "@type": "Project",
+          "name": "Paradise",
+          "url": "https://dholeragujarat.in/projects/paradise",
+          "image":"https://dholeragujarat.in/images/paradise.webp",
+          "description": "Paradise offers a serene living environment with state-of-the-art infrastructure and community facilities.",
+          "status": "sold-out",
+        },
+        {
+          "@type": "Project",
+          "name": "Maple",
+          "url": "https://dholeragujarat.in/projects/maple",
+          "image": "https://dholeragujarat.in/images/maple.webp",
+          "description": "Maple is a premium residential project offering spacious plots and modern amenities.",
+          "status": "sold-out",
+        },
+        {
+          "@type": "Project",
+          "name": "Marina Bay",
+          "url": "https://dholeragujarat.in/projects/marina-bay",
+          "image": "https://dholeragujarat.in/images/marina-bay.webp",
+          "description": "Marina Bay is a waterfront project designed for luxury living with stunning views and top-notch facilities.",
+          "status": "sold-out",
+        }
+      ]
+    }
+    `}
+        </script>
       </Head>
 
       <Navbar />
@@ -144,7 +249,9 @@ export default function Projects() {
                 <h3 className="text-3xl font-semibold text-green-900 mb-4">
                   {liveProject.name}
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">{liveProject.description}</p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {liveProject.description}
+                </p>
                 <ul className="list-disc list-inside text-gray-700 text-base space-y-1 mb-6">
                   {liveProject.highlights.map((point, idx) => (
                     <li key={idx}>{point}</li>
@@ -167,7 +274,10 @@ export default function Projects() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, idx) => (
-              <div key={idx} className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+              <div
+                key={idx}
+                className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
+              >
                 <div className="relative h-56 w-full">
                   <Image
                     src={project.image}
@@ -177,11 +287,21 @@ export default function Projects() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900">{project.name}</h3>
-                  <p className={`text-sm font-medium ${project.status === "Available" ? "text-green-700" : "text-red-500"} mb-2`}>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    {project.name}
+                  </h3>
+                  <p
+                    className={`text-sm font-medium ${
+                      project.status === "Available"
+                        ? "text-green-700"
+                        : "text-red-500"
+                    } mb-2`}
+                  >
                     {project.status}
                   </p>
-                  <p className="text-gray-600 mb-3 text-sm line-clamp-3">{project.description}</p>
+                  <p className="text-gray-600 mb-3 text-sm line-clamp-3">
+                    {project.description}
+                  </p>
                   <ul className="list-disc list-inside text-gray-700 text-sm mb-4 space-y-1">
                     {project.highlights.slice(0, 3).map((point, i) => (
                       <li key={i}>{point}</li>
