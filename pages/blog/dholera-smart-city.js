@@ -10,7 +10,7 @@ export default function DholeraSmartCity() {
       title="Why Dholera is India's Smart City of the Future"
       date="June 10, 2025"
       description="Discover why Dholera is India's most promising smart city with futuristic infrastructure, booming industries, and high-return real estate investments."
-      image="/images/blog/dholera smart city.png"
+      image="/images/blog/dholera smart city.webp"
       tags={["Smart City", "Investment", "Gujarat", "Real Estate", "Dholera"]}
     >
       {/* Share Button */}
@@ -219,7 +219,7 @@ export default function DholeraSmartCity() {
       {/* <div className="flex items-center p-6 bg-gray-50 rounded-xl mb-16">
         <div className="w-16 h-16 rounded-full bg-gray-300 mr-4 overflow-hidden">
           <Image 
-            src="/author-placeholder.jpg" 
+            src="/author-placeholder.webp" 
             width={64} 
             height={64} 
             alt="Author" 

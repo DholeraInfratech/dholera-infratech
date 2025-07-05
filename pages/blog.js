@@ -11,7 +11,7 @@ const blogPosts = [
     slug: "dholera-land-price-surge",
     excerpt:
       "Times of India reports 10-fold surge in land prices in Dholera SIR—here’s what’s fueling this growth.",
-    image: "/images/blog/blog4.jpeg",
+    image: "/images/blog/blog4.webp",
     date: "June 24, 2025",
     author: "Admin",
   },
@@ -38,7 +38,7 @@ const blogPosts = [
     slug: "dholera-sir-economy",
     excerpt:
       "Learn how Dholera’s Special Investment Region is becoming a major industrial and tech hub in India.",
-    image: "/images/blog/blog3.jpg",
+    image: "/images/blog/blog3.webp",
     date: "June 1, 2025",
     author: "Admin",
   },

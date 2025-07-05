@@ -51,28 +51,28 @@ export default function TopRealEstateProjects() {
                 status: 'Available',
                 description:
                   'Premium township located in TP2 Residential Zone, offering ready-to-invest plots with top-notch infrastructure.',
-                image: '/images/westwyn-banner.jpg',
+                image: '/images/westwyn-banner.webp',
               },
               {
                 name: 'Orchid Township',
                 status: 'Sold Out',
                 description:
                   'Located in the heart of Dholera’s development zone, Orchid Township offered high ROI for early investors.',
-                image: '/images/dholera-projects-image.jpg',
+                image: '/images/dholera-projects-image.webp',
               },
               {
                 name: 'Paradise 2',
                 status: 'Sold Out',
                 description:
                   'Phase 2 of the Paradise project, this development focused on sustainable and affordable living for modern families.',
-                image: '/images/dholera-projects-image.jpg',
+                image: '/images/dholera-projects-image.webp',
               },
               {
                 name: 'Marina Bay',
                 status: 'Sold Out',
                 description:
                   'Inspired by global waterfronts, Marina Bay was a themed township with a unique layout and green corridors.',
-                image: '/images/dholera-projects-image.jpg',
+                image: '/images/dholera-projects-image.webp',
               },
             ].map((project, i) => (
               <div key={i} className="bg-white rounded-xl shadow-md overflow-hidden">

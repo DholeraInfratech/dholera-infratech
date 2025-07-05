@@ -101,7 +101,7 @@ export default function Contact() {
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Name */}
             <div className="relative">
-              <User className="absolute left-3 top-3 text-gray-400" />
+              <User className="absolute left-3 top-3  text-gray-400" />
               <input
                 type="text"
                 name="name"

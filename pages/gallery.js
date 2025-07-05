@@ -17,12 +17,12 @@ const projects = [
   {
     name: "Paradise 2",
     slug: "paradise-2",
-    images: ["/images/paradise2-1.png", "/images/paradise2-2.png"],
+    images: ["/images/paradise2-1.webp", "/images/paradise2-2.webp"],
   },
   {
     name: "Orchid Township",
     slug: "orchid-township",
-    images: ["/images/orchid.png", "/images/orchid2.png"],
+    images: ["/images/orchid.webp", "/images/orchid2.webp"],
   },
   {
     name: "Paradise",
@@ -32,20 +32,20 @@ const projects = [
   {
     name: "Maple",
     slug: "maple",
-    images: ["/images/maple.png", "/images/maple2.png"],
+    images: ["/images/maple.webp", "/images/maple2.webp"],
   },
   {
     name: "Marina Bay",
     slug: "marina-bay",
-    images: ["/images/marina-bay.png", "/images/marina-bay2.png"],
+    images: ["/images/marina-bay.webp", "/images/marina-bay2.webp"],
   },
   {
     name: "WestWyn County",
     slug: "westwyn-county",
     images: [
-      "/images/westwyn-banner.jpg",
-      "/images/westwyngate.png",
-      "/images/westwynmap.png",
+      "/images/westwyn-banner.webp",
+      "/images/westwyngate.webp",
+      "/images/westwynmap.webp",
     ],
   },
 ];
@@ -57,7 +57,8 @@ export default function Gallery() {
     <>
       <Head>
         <title>
-          Dholera Project Gallery | Smart City Images & Investment Plots in Gujarat
+          Dholera Project Gallery | Smart City Images & Investment Plots in
+          Gujarat
         </title>
 
         <meta
@@ -86,10 +87,7 @@ export default function Gallery() {
           content="https://dholeragujarat.in/images/dholera-projects-image.jpg"
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://dholeragujarat.in/gallery"
-        />
+        <meta property="og:url" content="https://dholeragujarat.in/gallery" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />

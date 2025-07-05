@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import paradiseBanner from "@/public/images/dholera-projects-image.jpg";
+import paradiseBanner from "@/public/images/dholera-projects-image.webp";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import CostSheet from "../CostSheet";

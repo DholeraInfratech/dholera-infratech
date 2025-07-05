@@ -5,7 +5,7 @@ export default function DholeraSirTransformingEconomy() {
   const date = "June 27, 2025 • Admin";
   const description =
     "Learn how Dholera’s Special Investment Region is becoming a major industrial and tech hub in India, driving economic growth and investment in Gujarat.";
-  const image = "/images/blog/dholera-sir-economy.png";
+  const image = "/images/blog/dholera-sir-economy.webp";
   const tags = [
     "DholeraSIR",
     "GujaratEconomy",

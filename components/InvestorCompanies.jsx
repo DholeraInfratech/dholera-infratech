@@ -8,7 +8,7 @@ import { useState } from 'react';
 const investorData = [
   {
     name: "Tata Power",
-    logo: "/images/investors/tata-power.png",
+    logo: "/images/investors/tata-power.webp",
     project: "Renewable Energy Infrastructure",
     description:
       "Tata Power is building solar infrastructure and smart energy systems to power Dholera’s clean future.",
@@ -16,7 +16,7 @@ const investorData = [
   },
   {
     name: "ReNew Power",
-    logo: "/images/investors/renew.png",
+    logo: "/images/investors/renew.webp",
     project: "Mega Solar Park",
     description:
       "ReNew is creating a massive solar park, contributing to India’s renewable energy goals from Dholera.",
@@ -24,7 +24,7 @@ const investorData = [
   },
   {
     name: "Airbus",
-    logo: "/images/investors/airbus.png",
+    logo: "/images/investors/airbus.webp",
     project: "Aerospace Manufacturing Hub",
     description:
       "Airbus plans to collaborate in building advanced aerospace manufacturing facilities in Dholera.",
@@ -32,7 +32,7 @@ const investorData = [
   },
   {
     name: "Boeing",
-    logo: "/images/investors/boeing.png",
+    logo: "/images/investors/boeing.webp",
     project: "Defense & Aviation Tech Plant",
     description:
       "Boeing is planning a defense and aviation component unit within Dholera SIR’s industrial zones.",
@@ -40,7 +40,7 @@ const investorData = [
   },
   {
     name: "Adani Group",
-    logo: "/images/investors/adani.png",
+    logo: "/images/investors/adani.webp",
     project: "Smart Infrastructure & Logistics",
     description:
       "Adani Group is developing smart grid logistics and infrastructure within Dholera’s industrial corridors.",
@@ -48,7 +48,7 @@ const investorData = [
   },
   {
     name: "Torrent Power",
-    logo: "/images/investors/torrent.png",
+    logo: "/images/investors/torrent.webp",
     project: "Smart Grid Power Supply",
     description:
       "Torrent Power is deploying modern power distribution and smart grids to serve Dholera’s industry.",
@@ -56,7 +56,7 @@ const investorData = [
   },
   {
     name: "Rafael",
-    logo: "/images/investors/rafael.png",
+    logo: "/images/investors/rafael.webp",
     project: "Defense R&D Facility",
     description:
       "Rafael is planning an R&D and production unit for defense electronics in the Dholera defense corridor.",
@@ -64,7 +64,7 @@ const investorData = [
   },
   {
     name: "Essar",
-    logo: "/images/investors/essar.png",
+    logo: "/images/investors/essar.webp",
     project: "Green Hydrogen & Energy Hub",
     description:
       "Essar is investing in green hydrogen and energy storage solutions in Dholera SIR.",
@@ -72,7 +72,7 @@ const investorData = [
   },
   {
     name: "Nayara Energy",
-    logo: "/images/investors/nayara.png",
+    logo: "/images/investors/nayara.webp",
     project: "Clean Fuel Tech Plant",
     description:
       "Nayara is setting up clean fuel refining units aligned with Dholera’s industrial innovation goals.",
@@ -80,7 +80,7 @@ const investorData = [
   },
   {
     name: "Aditya Birla Group",
-    logo: "/images/investors/birla.png",
+    logo: "/images/investors/birla.webp",
     project: "Smart Materials & Industrial Chemicals",
     description:
       "Aditya Birla Group is investing in sustainable chemical manufacturing in Dholera industrial zones.",

@@ -19,7 +19,7 @@ const projects = [
       "Varied Plot Sizes",
       "Well-Planned Infrastructure",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/dholera-projects-image.webp",
   },
   {
     name: "Orchid Township",
@@ -32,7 +32,7 @@ const projects = [
       "Varied Plot Sizes",
       "Well-Planned Infrastructure",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/dholera-projects-image.webp",
   },
   {
     name: "Paradise",
@@ -45,7 +45,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/dholera-projects-image.webp",
   },
   {
     name: "Maple",
@@ -58,7 +58,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/dholera-projects-image.webp",
   },
   {
     name: "Marina Bay",
@@ -71,7 +71,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/dholera-projects-image.jpg",
+    image: "/images/dholera-projects-image.webp",
   },
   {
     name: "WestWyn County",
@@ -86,7 +86,7 @@ const projects = [
       "EV charging points and solar-ready design",
       "24x7 gated security and smart app-based management",
     ],
-    image: "/images/westwyn-banner.jpg",
+    image: "/images/westwyn-banner.webp",
   },
 ];
 

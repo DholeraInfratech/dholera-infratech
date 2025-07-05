@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import westwynBanner from "@/public/images/westwyn-banner.jpg";
+import westwynBanner from "@/public/images/westwyn-banner.webp";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import CostSheet from "../CostSheet";

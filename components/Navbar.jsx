@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-3">
               <img
-                src="/images/dholera_gujarat_logo.png"
+                src="/images/dholera_gujarat_logo.webp"
                 alt="Dholera Logo"
                 className="h-10 w-10 object-contain drop-shadow-lg"
               />

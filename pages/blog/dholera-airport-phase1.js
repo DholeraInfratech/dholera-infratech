@@ -7,7 +7,7 @@ export default function DholeraAirportPhase1() {
       title="Airport Phase 1 Nears Completion"
       date="June 24, 2025"
       description="Dholera International Airport Phase 1 is nearing completion, promising to enhance regional connectivity and attract major investments."
-      image="/images/blog/airport-phase1.jpg"
+      image="/images/blog/airport-phase1.webp"
       tags={[
         "DholeraInternationalAirport",
         "DholeraSmartCity",

@@ -6,7 +6,7 @@ export default function DholeraInfraInvestment2025() {
   const date = "June 24, 2025 • Admin";
   const description =
     "Dholera's infrastructure boom is attracting investors in 2025. Learn about the key projects, government initiatives, and why now is the time to invest.";
-  const image = "/images/blog/dholera city infra.png";
+  const image = "/images/blog/dholera city infra.webp";
   const tags = [
     "DholeraInvestment2025",
     "InfrastructureBoom",

@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://dholeragujarat.in/images/dholera-og.jpg" />
+        <meta property="og:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -54,7 +54,7 @@ export default function App({ Component, pageProps }) {
           name="twitter:description"
           content="Dholera Smart City: Invest in your future with the best residential & commercial plots in Gujarat."
         />
-        <meta name="twitter:image" content="https://dholeragujarat.in/images/dholera-og.jpg" />
+        <meta name="twitter:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
       </Head>
 
       <Component {...pageProps} />

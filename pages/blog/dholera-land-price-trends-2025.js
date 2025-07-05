@@ -7,7 +7,7 @@ export default function DholeraLandPriceTrends2025() {
       title="Dholera Land Price Trends 2025"
       date="June 24, 2025"
       description="Explore forecasted land appreciation, rising demand, and why 2025 is a strategic year to invest in Dholera SIR real estate."
-      image="/images/blog/dholera-land-price-trends.jpg"
+      image="/images/blog/dholera-land-price-trends.webp"
       tags={[
         "DholeraInvestment",
         "LandPriceForecast",

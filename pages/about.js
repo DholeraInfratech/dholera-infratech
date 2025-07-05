@@ -18,7 +18,7 @@ export default function About() {
         />
         <meta
           name="keywords"
-          content="Dholera Smart City, Dholera SIR, Dholera Gujarat, Dholera real estate, smart city Gujarat, investment in Dholera, Dholera property, Dholera plots, Dholera commercial property, Dholera residential projects"
+          content="Dholera Smart City,about dholera smart city,about dholera,dholera smart city,Dholera SIR,Dholera Gujarat,Dholera real estate,smart city Gujarat,investment in Dholera,Dholera property,Dholera plots,Dholera commercial property,Dholera residential projects"
         />
         <meta name="author" content="DholeraGujarat.in" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,7 +30,7 @@ export default function About() {
           property="og:description"
           content="Explore Dholera Smart City and discover investment opportunities, smart infrastructure, and future-ready real estate developments in Gujarat."
         />
-        <meta property="og:image" content="/images/dholera-og.jpg" />
+        <meta property="og:image" content="/images/dholera-og.webp" />
         <meta property="og:url" content="https://dholeragujarat.in/about" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://dholeragujarat.in/about" />
