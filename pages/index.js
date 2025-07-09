@@ -12,6 +12,8 @@ import Head from "next/head";
 import InvestorCompanies from "@/components/InvestorCompanies";
 import HeroSlider from "@/components/HeroSlider";
 import DholeraInfoSections from "@/components/DholeraInfoSections";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -57,6 +59,7 @@ export default function Home() {
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <link rel="canonical" href="https://dholeragujarat.in/" />
         <meta name="robots" content="index, follow" />
+        <meta name="author" content="DholeraGujarat.in" />
 
         <script type="application/ld+json">
           {`

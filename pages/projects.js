@@ -17,7 +17,7 @@ const projects = [
       "Varied Plot Sizes",
       "Well-Planned Infrastructure",
     ],
-    image: "/images/paradise2-1.png",
+    image: "/images/paradise2-1.webp",
   },
   {
     name: "Orchid Township",
@@ -30,7 +30,7 @@ const projects = [
       "Close to Educational & Commercial Hubs",
       "Smart Infrastructure",
     ],
-    image: "/images/orchid.png",
+    image: "/images/orchid.webp",
   },
   {
     name: "Paradise",
@@ -43,7 +43,7 @@ const projects = [
       "Modern Amenities",
       "High Investment Potential",
     ],
-    image: "/images/paradise.png",
+    image: "/images/paradise1-1.webp",
   },
   {
     name: "Maple",
@@ -56,7 +56,7 @@ const projects = [
       "Proximity to Industrial Zone",
       "Green Boulevard Design",
     ],
-    image: "/images/maple.png",
+    image: "/images/maple.webp",
   },
   {
     name: "Marina Bay",
@@ -69,7 +69,7 @@ const projects = [
       "Modern Drainage & Electricity",
       "Future-Forward Design",
     ],
-    image: "/images/marina-bay.png",
+    image: "/images/marina-bay.webp",
   },
   {
     name: "WestWyn County",
@@ -117,6 +117,9 @@ export default function Projects() {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://dholeragujarat.in/projects" />
+        <meta name="author" content="DholeraGujarat.in"/>
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
@@ -143,7 +146,7 @@ export default function Projects() {
           content="https://dholeragujarat.in/images/westwyn-banner.webp"
         />
 
-        <link rel="canonical" href="https://dholeragujarat.in/projects" />
+
 
         {/* Structured Data: CollectionPage with all projects */}
         <script type="application/ld+json">
@@ -191,7 +194,7 @@ export default function Projects() {
           "@type": "Project",
           "name": "Paradise",
           "url": "https://dholeragujarat.in/projects/paradise",
-          "image":"https://dholeragujarat.in/images/paradise.webp",
+          "image":"https://dholeragujarat.in/images/paradise1-1.webp",
           "description": "Paradise offers a serene living environment with state-of-the-art infrastructure and community facilities.",
           "status": "sold-out",
         },

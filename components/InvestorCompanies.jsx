@@ -130,7 +130,7 @@ const InvestorCompanies = () => {
   };
 
   return (
-    <section className="bg-white py-12 px-4 md:px-16">
+    <section className="bg-white py-12 px-4 md:px-16" id='investing-companies'>
       {/* <Head>
         <title>Dholera Investment Companies | Top Investors in Smart City</title>
         <meta

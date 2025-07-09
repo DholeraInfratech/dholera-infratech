@@ -27,7 +27,7 @@ const projects = [
   {
     name: "Paradise",
     slug: "paradise",
-    images: ["/images/paradise.png", "/images/paradise2.png"],
+    images: ["/images/paradise1-1.webp", "/images/paradise1-2.webp"],
   },
   {
     name: "Maple",
@@ -137,6 +137,7 @@ export default function Gallery() {
                   alt={`Image of ${project.name}`}
                   fill
                   style={{ objectFit: "cover" }}
+                  priority
                 />
               </div>
               <div className="p-4 text-center">

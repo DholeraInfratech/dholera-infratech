@@ -32,6 +32,8 @@ export default function App({ Component, pageProps }) {
 
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="author" content="DholeraGujarat.in" />
+
         <meta name="robots" content="index, follow" />
 
         {/* Favicon */}

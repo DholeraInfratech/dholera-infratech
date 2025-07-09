@@ -5,7 +5,7 @@ const MapDirections = () => {
   const encodedAddress = encodeURIComponent(address);
 
   return (
-    <section className="bg-[#99b4cb] py-12 px-6">
+    <section className="bg-[#99b4cb] py-12 px-6" id="map-directions">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Find Us</h2>
         <p className="mb-6 text-gray-600">

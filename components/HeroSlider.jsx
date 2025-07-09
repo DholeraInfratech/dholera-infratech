@@ -36,7 +36,7 @@ const slides = [
 
 export default function HeroSlider() {
   return (
-    <section
+    <section id='hero-slider'
       className="relative w-full min-h-screen overflow-hidden"
       aria-label="Featured Dholera Real Estate Projects"
     >

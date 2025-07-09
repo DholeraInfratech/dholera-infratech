@@ -59,7 +59,7 @@ export default function About() {
         />
       </Head>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-b from-indigo-100 via-purple-100 to-white text-gray-900">
+      <main className="min-h-screen bg-gradient-to-b from-indigo-100 via-purple-100 to-white text-gray-900" id='about'>
         {/* Hero Section */}
         <div className="relative w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[500px]">
           <Image

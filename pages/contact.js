@@ -81,6 +81,7 @@ export default function Contact() {
     content="Dholera Contact, Contact Dholera Gujarat, Dholera Smart City Contact, Plots in Dholera, Property Dealer Dholera, Investment in Dholera, Dholera Real Estate"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="DholeraGujarat.in" />
   <meta name="robots" content="index, follow" />
   <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
   <link rel="canonical" href="https://dholeragujarat.in/contact" />

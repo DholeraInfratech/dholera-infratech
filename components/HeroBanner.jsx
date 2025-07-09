@@ -39,7 +39,7 @@ export default function HeroBanner() {
   ];
 
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="bg-gray-50 text-gray-800" id='invest-in-dholera'>
       {/* Hero Section */}
       <div className="relative h-[400px] flex items-center justify-center">
         <Image
@@ -62,7 +62,7 @@ export default function HeroBanner() {
       </div>
 
       {/* Introduction Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16 bg-gradient-to-br from-white via-gray-100 to-white">
+      <section className="max-w-6xl mx-auto px-6 py-16 bg-gradient-to-br from-white via-gray-100 to-white" id='why-invest'>
         <h3 className="text-4xl font-extrabold text-green-700 mb-6 text-center">
           Why Invest in Dholera Smart City?
         </h3>
@@ -83,7 +83,7 @@ export default function HeroBanner() {
       </section>
 
       {/* Highlights Section */}
-      <section className="bg-[#f4f8fb] py-16 shadow-inner">
+      <section className="bg-[#f4f8fb] py-16 shadow-inner" id='key-highlights'>
         <div className="max-w-6xl mx-auto px-6">
           <h3 className="text-3xl font-bold text-blue-800 mb-10 text-center">
             Key Highlights of Dholera – Built for the Future
@@ -105,7 +105,7 @@ export default function HeroBanner() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 via-white to-green-50">
+      <section className="py-16 bg-gradient-to-r from-blue-50 via-white to-green-50" id='glimpse-section'>
         <div className="max-w-6xl mx-auto px-6">
           <h3 className="text-3xl font-bold text-center text-green-800 mb-12">
             A Glimpse of Dholera – Vision to Reality

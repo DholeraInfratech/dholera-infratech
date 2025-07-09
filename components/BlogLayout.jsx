@@ -105,13 +105,55 @@ export default function BlogLayout({
     setEditText("");
   };
 
+  const siteUrl = `https://dholeragujarat.in${router.asPath}`;
+  const siteName = "DholeraGujarat.in";
+  const author = "DholeraGujarat.in";
+
   return (
     <>
       <Head>
-        <title>{title}</title>
+        {/* <title>{title}</title> */}
         <meta name="description" content={description} />
+        <meta name="keywords" content="Dholera Smart City, Dholera Projects, Investment in Dholera, Dholera Plots, Dholera SIR, Gujarat Real Estate" />
+        <meta name="author" content={author} />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={siteUrl} />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
+
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:site_name" content={siteName} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": title,
+            "image": image,
+            "description": description,
+            "url": siteUrl,
+            "datePublished": date,
+            "author": { "@type": "Organization", "name": author },
+            "publisher": {
+              "@type": "Organization",
+              "name": siteName,
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://dholeragujarat.in/images/dholera_gujarat_logo.ico"
+              }
+            },
+            "mainEntityOfPage": siteUrl
+          })}
+        </script>
       </Head>
 
       <Navbar />

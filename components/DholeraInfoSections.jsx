@@ -4,7 +4,7 @@ const DholeraInfoSections = () => {
   return (
     <>
       {/* About Dholera - Detailed Version */}
-      <section className="bg-white py-16 px-6 md:px-10">
+      <section className="bg-white py-16 px-6 md:px-10" id="info-about-dholera">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-[#004d40] mb-6">
             About Dholera Smart City
@@ -27,7 +27,7 @@ const DholeraInfoSections = () => {
       </section>
 
       {/* Latest News & Insights Section */}
-      <section className="bg-gray-50 py-16 px-6 md:px-10">
+      <section className="bg-gray-50 py-16 px-6 md:px-10" id="latest-news-insights">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-[#00796b] mb-10">
             📢 Latest News & Market Insights
@@ -74,7 +74,7 @@ const DholeraInfoSections = () => {
       </section>
 
       {/* Growth Timeline Section */}
-      <section className="bg-white py-16 px-6 md:px-10">
+      <section className="bg-white py-16 px-6 md:px-10" id="growth-timeline">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-[#004d40] mb-10">
             🚀 Dholera Growth Timeline (2025–2028+)
@@ -115,7 +115,7 @@ const DholeraInfoSections = () => {
       </section>
 
       {/* Plot Buying Journey Section */}
-      <section className="bg-gray-100 py-16 px-6 md:px-10">
+      <section className="bg-gray-100 py-16 px-6 md:px-10" id="plot-buying-journey">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-[#004d40] mb-10">
             🧭 Your Smart Plot Buying Journey

@@ -52,7 +52,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className=" mx-auto px-6 py-20 bg-gradient-to-br from-indigo-300 via-sky-100 to-gray-200 ">
+    <section className=" mx-auto px-6 py-20 bg-gradient-to-br from-indigo-300 via-sky-100 to-gray-200 " id='FAQ-section'>
       <h2 className="text-4xl font-extrabold text-center text-gradient bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent mb-12">
         ❓ Frequently Asked Questions
       </h2>

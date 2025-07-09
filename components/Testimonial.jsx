@@ -86,7 +86,7 @@ const Testimonial = () => {
   );
 
   return (
-    <section className="py-24 bg-gradient-to-br from-[#f0f4f8] via-[#d2e6f5] to-[#fefefe]">
+    <section className="py-24 bg-gradient-to-br from-[#f0f4f8] via-[#d2e6f5] to-[#fefefe]" id='testimonial'>
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-sky-500 to-indigo-400 drop-shadow">
           What Investors Say About Dholera
