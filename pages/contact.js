@@ -68,7 +68,6 @@ export default function Contact() {
 
   return (
     <>
-     import Head from "next/head";
 
 <Head>
   <title>Contact Us | Dholera Smart City Plots & Real Estate - DholeraGujarat.in</title>
