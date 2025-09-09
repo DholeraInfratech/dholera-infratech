@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="UTF-8" />
-        {/* <link rel="icon" type="image/x-icon" href="https://dholeragujarat.in/images/favicon.ico" /> */}
+        {/* <link rel="icon" type="image/x-icon" href="https://dholerainfratech.com/images/favicon.ico" /> */}
         <link rel="icon" href="/favicon.ico" />
 
       </Head>

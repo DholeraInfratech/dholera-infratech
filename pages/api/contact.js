@@ -66,10 +66,10 @@ export default async function handler(req, res) {
 
     // Auto-reply to user
     await transporter.sendMail({
-      from: `"Dholera Gujarat" <${process.env.EMAIL_USER}>`,
+      from: `"Dholera Infratech" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Thanks for contacting us!",
-      text: `Hi ${name},\n\nThank you for reaching out! We’ve received your message and will get back to you shortly.\n\nYour message:\n"${message}"\n\nRegards,\nDholera Gujarat Team`,
+      text: `Hi ${name},\n\nThank you for reaching out! We’ve received your message and will get back to you shortly.\n\nYour message:\n"${message}"\n\nRegards,\nDholera Infratech Team`,
     });
 
     return res

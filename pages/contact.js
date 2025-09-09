@@ -70,30 +70,30 @@ export default function Contact() {
     <>
 
 <Head>
-  <title>Contact Us | Dholera Smart City Plots & Real Estate - DholeraGujarat.in</title>
+  <title>Contact Us | Dholera Smart City Plots & Real Estate - Dholera Infratech</title>
   <meta
     name="description"
-    content="Contact DholeraGujarat.in for expert guidance on investing in Dholera Smart City. Reach us for queries about residential and commercial plots, property rates, and site visits."
+    content="Contact Dholera Infratech for expert guidance on investing in Dholera Smart City. Reach us for queries about residential and commercial plots, property rates, and site visits."
   />
   <meta
     name="keywords"
-    content="Dholera Contact, Contact Dholera Gujarat, Dholera Smart City Contact, Plots in Dholera, Property Dealer Dholera, Investment in Dholera, Dholera Real Estate"
+    content="Dholera Contact, Contact Dholera Infratech, Dholera Smart City Contact, Plots in Dholera, Property Dealer Dholera, Investment in Dholera, Dholera Real Estate"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="DholeraGujarat.in" />
+  <meta name="author" content="Dholera Infratech" />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
-  <link rel="canonical" href="https://dholeragujarat.in/contact" />
+  <link rel="icon" href="/images/dholera_infratech_logo.ico" />
+  <link rel="canonical" href="https://dholerainfratech.com/contact" />
 
   {/* Open Graph / Facebook */}
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Contact Us | Dholera Smart City Plots & Investment" />
   <meta
     property="og:description"
-    content="Get in touch with DholeraGujarat.in to explore top real estate opportunities in Dholera Smart City. Ask about plot prices, locations, and investment options."
+    content="Get in touch with Dholera Infratech to explore top real estate opportunities in Dholera Smart City. Ask about plot prices, locations, and investment options."
   />
-  <meta property="og:url" content="https://dholeragujarat.in/contact" />
-  <meta property="og:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
+  <meta property="og:url" content="https://dholerainfratech.com/contact" />
+  <meta property="og:image" content="https://dholerainfratech.com/images/dholera-og.webp" />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -102,7 +102,7 @@ export default function Contact() {
     name="twitter:description"
     content="Speak to our Dholera property experts. Contact us today for real estate investment opportunities in Dholera SIR and Smart City projects."
   />
-  <meta name="twitter:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
+  <meta name="twitter:image" content="https://dholerainfratech.com/images/dholera-og.webp" />
 
   {/* Structured Data - ContactPage */}
   <script type="application/ld+json">
@@ -112,9 +112,9 @@ export default function Contact() {
       "@type": "ContactPage",
       "mainEntity": {
         "@type": "Organization",
-        "name": "DholeraGujarat.in",
-        "url": "https://dholeragujarat.in",
-        "logo": "https://dholeragujarat.in/images/dholera_gujarat_logo.ico",
+        "name": "Dholera Infratech",
+        "url": "https://dholerainfratech.com",
+        "logo": "https://dholerainfratech.com/images/dholera_gujarat_logo.ico",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+91-9540561820",
@@ -123,7 +123,7 @@ export default function Contact() {
           "availableLanguage": ["English", "Hindi", "Gujarati"]
         }
       },
-      "url": "https://dholeragujarat.in/contact",
+      "url": "https://dholerainfratech.com/contact",
       "description": "Contact us for property bookings, site visits, and investment opportunities in Dholera Smart City, Gujarat."
     }
     `}

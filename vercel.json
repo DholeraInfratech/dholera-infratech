@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.dholeragujarat.in"
+          "value": "www.dholerainfratech.com"
         }
       ],
-      "destination": "https://dholeragujarat.in/:path*",
+      "destination": "https://dholerainfratech.com/:path*",
       "statusCode": 308
     }
   ]

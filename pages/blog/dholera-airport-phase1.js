@@ -15,12 +15,12 @@ export default function DholeraAirportPhase1() {
           name="keywords"
           content="Dholera Airport blog,Dholera Airport, Airport Phase 1 Dholera, Dholera Smart City Airport, Dholera connectivity, Dholera aviation,dholera airport news,dholera airport blog, airport news dholera, airport blog dholera, dholera airport updates, dholera airport phase 1, dholera smart city airport, dholera connectivity, dholera aviation, dholera airport impact, dholera airport growth, dholera airport investment"
         />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="canonical"
-          href="https://dholeragujarat.in/blog/dholera-airport-phase1"
+          href="https://dholerainfratech.com/blog/dholera-airport-phase1"
         />
 
         <meta property="og:type" content="article" />
@@ -34,11 +34,11 @@ export default function DholeraAirportPhase1() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/blogs/dholera-airport-phase1.webp"
+          content="https://dholerainfratech.com/images/blogs/dholera-airport-phase1.webp"
         />
         <meta
           property="og:url"
-          content="https://dholeragujarat.in/blog/dholera-airport-phase1"
+          content="https://dholerainfratech.com/blog/dholera-airport-phase1"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -52,7 +52,7 @@ export default function DholeraAirportPhase1() {
         />
         <meta
           name="twitter:image"
-          content="https://dholeragujarat.in/images/blogs/dholera-airport-phase1.webp"
+          content="https://dholerainfratech.com/images/blogs/dholera-airport-phase1.webp"
         />
 
         <script type="application/ld+json">
@@ -61,22 +61,22 @@ export default function DholeraAirportPhase1() {
             "@type": "BlogPosting",
             headline: "Dholera Airport Phase 1: Boosting Connectivity & Growth",
             image:
-              "https://dholeragujarat.in/images/blogs/dholera-airport-phase1.webp",
+              "https://dholerainfratech.com/images/blogs/dholera-airport-phase1.webp",
             description:
               "Dholera International Airport Phase 1 will revolutionize travel and investment opportunities in the smart city zone of Gujarat.",
-            url: "https://dholeragujarat.in/blog/dholera-airport-phase1",
+            url: "https://dholerainfratech.com/blog/dholera-airport-phase1",
             datePublished: "2025-07-01",
-            author: { "@type": "Organization", name: "DholeraGujarat.in" },
+            author: { "@type": "Organization", name: "Dholera Infratech" },
             publisher: {
               "@type": "Organization",
-              name: "DholeraGujarat.in",
+              name: "Dholera Infratech",
               logo: {
                 "@type": "ImageObject",
-                url: "https://dholeragujarat.in/images/dholera_gujarat_logo.ico",
+                url: "https://dholerainfratech.com/images/dholera_gujarat_logo.ico",
               },
             },
             mainEntityOfPage:
-              "https://dholeragujarat.in/blog/dholera-airport-phase1",
+              "https://dholerainfratech.com/blog/dholera-airport-phase1",
           })}
         </script>
       </Head>

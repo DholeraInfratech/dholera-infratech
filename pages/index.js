@@ -30,12 +30,12 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Dholera Gujarat | Plots, Properties & Investment Opportunities in
+          Dholera Infratech | Plots, Properties & Investment Opportunities in
           Dholera Smart City
         </title>
         <meta
           name="description"
-          content="Explore residential and commercial plots in Dholera Smart City. DholeraGujarat.in is your trusted source for real estate projects, property listings, investment insights, and Dholera development news."
+          content="Explore residential and commercial plots in Dholera Smart City. Dholera Infratech is your trusted source for real estate projects, property listings, investment insights, and Dholera development news."
         />
         <meta
           name="keywords"
@@ -44,7 +44,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:title"
-          content="Dholera Gujarat - Plots & Properties in Dholera Smart City"
+          content="Dholera Infratech - Plots & Properties in Dholera Smart City"
         />
         <meta
           property="og:description"
@@ -52,14 +52,14 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/dholera-og.webp"
+          content="https://dholerainfratech.com/images/dholera-og.webp"
         />
-        <meta property="og:url" content="https://dholeragujarat.in/" />
+        <meta property="og:url" content="https://dholerainfratech.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
-        <link rel="canonical" href="https://dholeragujarat.in/" />
+        <link rel="canonical" href="https://dholerainfratech.com/" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
 
         <script type="application/ld+json">
           {`
@@ -67,11 +67,11 @@ export default function Home() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Dholera Smart City Real Estate",
-          "url": "https://dholeragujarat.in/",
+          "url": "https://dholerainfratech.com/",
           "description": "Explore Dholera Smart City plots and real estate investment opportunities in Gujarat. Government-approved residential and commercial properties with high ROI potential.",
           "publisher": {
             "@type": "Organization",
-            "name": "DholeraGujarat.in"
+            "name": "Dholera Infratech"
           }
         }
         `}

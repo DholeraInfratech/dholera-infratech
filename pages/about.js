@@ -11,29 +11,29 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Dholera Smart City | DholeraGujarat.in</title>
+        <title>About Dholera Smart City | Dholera Infratech</title>
         <meta
           name="description"
-          content="Learn about Dholera Smart City, India’s first greenfield smart city in Gujarat. Explore real estate projects, investment opportunities, and smart infrastructure with DholeraGujarat.in."
+          content="Learn about Dholera Smart City, India’s first greenfield smart city in Gujarat. Explore real estate projects, investment opportunities, and smart infrastructure with Dholera Infratech."
         />
         <meta
           name="keywords"
           content="Dholera Smart City,about dholera smart city,about dholera,dholera smart city,Dholera SIR,Dholera Gujarat,Dholera real estate,smart city Gujarat,investment in Dholera,Dholera property,Dholera plots,Dholera commercial property,Dholera residential projects"
         />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:title"
-          content="About Dholera Smart City | DholeraGujarat.in"
+          content="About Dholera Smart City | Dholera Infratech"
         />
         <meta
           property="og:description"
           content="Explore Dholera Smart City and discover investment opportunities, smart infrastructure, and future-ready real estate developments in Gujarat."
         />
         <meta property="og:image" content="/images/dholera-og.webp" />
-        <meta property="og:url" content="https://dholeragujarat.in/about" />
+        <meta property="og:url" content="https://dholerainfratech.com/about" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://dholeragujarat.in/about" />
+        <link rel="canonical" href="https://dholerainfratech.com/about" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
         <script
@@ -43,15 +43,15 @@ export default function About() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: "About Dholera Smart City",
-              url: "https://dholeragujarat.in/about",
+              url: "https://dholerainfratech.com/about",
               description:
-                "DholeraGujarat.in offers insights into India’s largest planned smart city - Dholera. Learn about real estate investments, infrastructure, and future growth opportunities.",
+                "Dholera Infratech offers insights into India’s largest planned smart city - Dholera. Learn about real estate investments, infrastructure, and future growth opportunities.",
               publisher: {
                 "@type": "Organization",
-                name: "DholeraGujarat.in",
+                name: "Dholera Infratech",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://dholeragujarat.in/images/dholera_gujarat_logo.ico",
+                  url: "https://dholerainfratech.com/images/dholera_gujarat_logo.ico",
                 },
               },
             }),
@@ -73,12 +73,12 @@ export default function About() {
             <div className="max-w-4xl">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-md leading-tight">
                 Welcome to{" "}
-                <span className="text-[#ffd200]">DholeraGujarat.in</span>
+                <span className="text-[#ffd200]">Dholera Infratech</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 mt-4 leading-relaxed">
                 Discover <strong>Dholera Smart City</strong> — India’s largest
                 planned smart city in Gujarat. At{" "}
-                <strong>DholeraGujarat.in</strong>, we offer reliable property
+                <strong>Dholera Infratech</strong>, we offer reliable property
                 listings, investment insights, infrastructure updates, and
                 expert guidance to help you capitalize on Dholera SIR’s real
                 estate and smart urban development boom.
@@ -91,7 +91,7 @@ export default function About() {
         <section className="max-w-6xl mx-auto px-4 py-16">
           <div className="mb-10">
             <p className="text-lg text-gray-700 leading-relaxed">
-              DholeraGujarat.in is your trusted partner for exploring the
+              Dholera Infratech is your trusted partner for exploring the
               futuristic opportunities of{" "}
               <strong>Dholera Special Investment Region (SIR)</strong>. From
               industrial corridors and mega-infrastructure to smart homes and
@@ -104,7 +104,7 @@ export default function About() {
             <p className="text-lg leading-relaxed">
               We are a passionate team at{" "}
               <span className="font-semibold text-red-500">
-                DholeraGujarat.in
+                Dholera Infratech
               </span>{" "}
               — combining real estate expertise, digital strategy, and civic
               vision to empower all stakeholders in <strong>Dholera SIR</strong>
@@ -156,7 +156,7 @@ export default function About() {
           </section>
 
           <Section
-            title="✅ Why Choose DholeraGujarat.in?"
+            title="✅ Why Choose Dholera Infratech?"
             color="text-red-700"
             bg="bg-gradient-to-r from-red-100 to-red-50"
           >
@@ -278,7 +278,7 @@ export default function About() {
             bg="bg-indigo-50"
           >
             <p className="text-lg text-gray-700 mb-4">
-              DholeraGujarat.in offers a dedicated investment support desk for
+              Dholera Infratech offers a dedicated investment support desk for
               NRIs looking to invest in Dholera SIR real estate.
             </p>
             <ul className="list-disc list-inside text-gray-800 text-lg space-y-2">

@@ -11,7 +11,7 @@ const slides = [
   {
     image: '/images/slider/slider1.webp',
     title: 'Real Estate that Reflects Your Vision',
-    subtitle: 'Welcome to DholeraGujarat.in',
+    subtitle: 'Welcome to Dholera Infratech',
     text: 'Explore premium plots and properties in Dholera Smart City — crafted with care, delivered with precision.',
     alt: 'Aerial view of plots and properties in Dholera Smart City',
     blur: '/images/slider/blur/slider1-blur.webp',
@@ -19,7 +19,7 @@ const slides = [
   {
     image: '/images/slider/westwyngate.webp',
     title: 'Our Blueprint to Build Your Dream',
-    subtitle: 'Welcome to DholeraGujarat.in',
+    subtitle: 'Welcome to Dholera Infratech',
     text: 'Buy residential and commercial plots in Westwyn Gate – inspiring investment in Dholera real estate.',
     alt: 'Clubhouse at Westwyn Gate, a real estate project in Dholera',
     blur: '/images/slider/blur/westwyngate-blur.webp',
@@ -27,7 +27,7 @@ const slides = [
   {
     image: '/images/slider/paradise2.webp',
     title: 'Driving the Growth of Dholera Smart City',
-    subtitle: 'Welcome to DholeraGujarat.in',
+    subtitle: 'Welcome to Dholera Infratech',
     text: 'Discover Paradise 2 – one of the top Dholera real estate projects for smart investors.',
     alt: 'Paradise 2 gated entry – top smart city property in Dholera',
     blur: '/images/slider/blur/paradise2-blur.webp',

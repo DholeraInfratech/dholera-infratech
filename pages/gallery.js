@@ -69,9 +69,9 @@ export default function Gallery() {
           name="keywords"
           content="Dholera images, Dholera project photos, Dholera Smart City gallery, Dholera SIR images, investment plots in Dholera, Dholera real estate pictures, Dholera infrastructure, Gujarat smart city plots, dholera images, dholera photos , dholera smart city photos, dholera project images, dholera sir photos, dholera real estate images, dholera investment plots, dholera smart city infrastructure, dholera smart city projects, dholera smart city gallery, dholera sir images, dholera sir photos, dholera sir projects, dholera sir gallery"
         />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://dholeragujarat.in/gallery" />
+        <link rel="canonical" href="https://dholerainfratech.com/gallery" />
 
         {/* Open Graph / Facebook */}
         <meta
@@ -84,10 +84,10 @@ export default function Gallery() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/dholera-projects-image.webp"
+          content="https://dholerainfratech.com/images/dholera-projects-image.webp"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dholeragujarat.in/gallery" />
+        <meta property="og:url" content="https://dholerainfratech.com/gallery" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -101,7 +101,7 @@ export default function Gallery() {
         />
         <meta
           name="twitter:image"
-          content="https://dholeragujarat.in/images/dholera-projects-image.webp"
+          content="https://dholerainfratech.com/images/dholera-projects-image.webp"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />

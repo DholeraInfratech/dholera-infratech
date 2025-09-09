@@ -18,7 +18,7 @@ const Footer = () => (
       {/* Brand */}
       <div className="flex-1 min-w-[220px]">
         <h2 className="text-3xl font-bold text-[#ffd200] mb-4 drop-shadow-[2px_2px_8px_rgba(0,0,0,0.4)]">
-          DholeraGujarat.in
+          Dholera Infratech
         </h2>
         <p className="leading-relaxed opacity-90">
           Discover future-ready investment opportunities in{" "}
@@ -27,7 +27,7 @@ const Footer = () => (
           </span>
           . At{" "}
           <span className="text-[#ffd200] font-semibold">
-            DholeraGujarat.in
+            Dholera Infratech
           </span>
           , we bring verified projects, expert guidance, and smart real estate
           solutions for tomorrow’s growth hub. <br />
@@ -61,10 +61,10 @@ const Footer = () => (
         <p className="mb-2">
           Email:{" "}
           <a
-            href="mailto:dholeragujarat.in@gmail.com"
+            href="mailto:dholerainfratech.in@gmail.com"
             className="hover:text-[#ffd200]"
           >
-            dholeragujarat.in@gmail.com
+            dholerainfratech.in@gmail.com
           </a>
         </p>
         <p className="mb-2">
@@ -91,12 +91,12 @@ const Footer = () => (
             {
               icon: "fa-facebook",
               label: "Facebook",
-              link: "https://www.facebook.com/profile.php?id=61577252619034",
+              link: "https://www.facebook.com/profile.php?id=61580012777206",
             },
             {
               icon: "fa-instagram",
               label: "Instagram",
-              link: "https://www.instagram.com/dholerainfratech/",
+              link: "https://www.instagram.com/dholerainfratechofficial/",
             },
             {
               icon: "fa-linkedin",
@@ -120,7 +120,7 @@ const Footer = () => (
 
     {/* Divider and Copyright */}
     <div className="relative z-[2] mt-12 border-t border-white/20 pt-6 text-center text-white text-sm opacity-70">
-      dholeragujarat.in &copy; {new Date().getFullYear()} . All rights reserved.
+      Dholera Infratech &copy; {new Date().getFullYear()} . All rights reserved.
     </div>
 
     {/* Font Awesome CDN */}

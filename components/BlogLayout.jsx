@@ -105,9 +105,9 @@ export default function BlogLayout({
     setEditText("");
   };
 
-  const siteUrl = `https://dholeragujarat.in${router.asPath}`;
-  const siteName = "DholeraGujarat.in";
-  const author = "DholeraGujarat.in";
+  const siteUrl = `https://dholerainfratech.com${router.asPath}`;
+  const siteName = "dholerainfratech.com";
+  const author = "dholerainfratech.com";
 
   return (
     <>
@@ -148,7 +148,7 @@ export default function BlogLayout({
               "name": siteName,
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://dholeragujarat.in/images/dholera_gujarat_logo.ico"
+                "url": "https://dholerainfratech.com/images/dholera_gujarat_logo.ico"
               }
             },
             "mainEntityOfPage": siteUrl

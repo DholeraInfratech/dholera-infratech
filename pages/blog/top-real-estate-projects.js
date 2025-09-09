@@ -7,7 +7,7 @@ export default function TopRealEstateProjects() {
   const author = "Admin";
   const description =
     "Explore the best real estate projects in Dholera Smart City. Discover investment opportunities in residential, commercial and plotted development projects in India's first smart city.";
-  const canonical = "https://dholeragujarat.in/blog/top-real-estate-projects";
+  const canonical = "https://dholerainfratech.com/blog/top-real-estate-projects";
 
   return (
     <BlogLayout

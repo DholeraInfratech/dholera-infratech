@@ -15,7 +15,7 @@ const WhatsAppFloatingButton = dynamic(() => import("@/components/WhatsAppFloati
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const canonicalUrl = `https://dholeragujarat.in${router.asPath === "/" ? "" : router.asPath}`;
+  const canonicalUrl = `https://dholerainfratech.com${router.asPath === "/" ? "" : router.asPath}`;
 
   return (
     <UserProvider>
@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>DholeraGujarat.in - Smart City Investment Destination</title>
+        <title>Dholera Infratech - Smart City Investment Destination</title>
         <meta
           name="description"
           content="Dholera Smart City - Explore investment, residential plots, township projects, and long-term growth opportunities."
@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
 
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
 
         <meta name="robots" content="index, follow" />
 
@@ -40,14 +40,14 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         {/* Open Graph (for social sharing) */}
-        <meta property="og:title" content="DholeraGujarat.in - Smart City Investment Destination" />
+        <meta property="og:title" content="Dholera Infratech - Smart City Investment Destination" />
         <meta
           property="og:description"
           content="Dholera Smart City - Explore real estate, projects, residential plots, and more."
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
+        <meta property="og:image" content="https://dholerainfratech.com/images/dholera-og.webp" />
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }) {
           name="twitter:description"
           content="Dholera Smart City: Invest in your future with the best residential & commercial plots in Gujarat."
         />
-        <meta name="twitter:image" content="https://dholeragujarat.in/images/dholera-og.webp" />
+        <meta name="twitter:image" content="https://dholerainfratech.com/images/dholera-og.webp" />
       </Head>
 
       <Component {...pageProps} />

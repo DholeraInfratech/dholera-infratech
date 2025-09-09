@@ -60,7 +60,7 @@ export default function Blog() {
           name="keywords"
           content="Dholera Smart City blog, Dholera Blogs, Dholera blog, Dholera real estate news, Dholera investment, Dholera plots, Dholera SIR updates, Dholera infrastructure news, Dholera property market, smart city India , dholera news, dholera blogs,dholera blogs,dholera investment news,dholera real estate news, dholera updated news, dholera updates"
         />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph / Facebook */}
@@ -74,7 +74,7 @@ export default function Blog() {
         />
         <meta property="og:image" content="/images/dholera-blog-banner.jpg" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dholeragujarat.in/blog" />
+        <meta property="og:url" content="https://dholerainfratech.com/blog" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -88,7 +88,7 @@ export default function Blog() {
         />
         <meta name="twitter:image" content="/images/dholera-blog-banner.jpg" />
 
-        <link rel="canonical" href="https://dholeragujarat.in/blog" />
+        <link rel="canonical" href="https://dholerainfratech.com/blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>

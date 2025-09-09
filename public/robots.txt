@@ -6,4 +6,4 @@ Disallow: /api/
 Disallow: /static/
 Disallow: /admin/
 
-Sitemap: https://dholeragujarat.in/sitemap.xml
+Sitemap: https://dholerainfratech.com/sitemap.xml

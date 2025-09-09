@@ -117,7 +117,7 @@ export default function ProjectDetail({ project }) {
           />
           <link
             rel="canonical"
-            href="https://dholeragujarat.in/projects/westwyn-county"
+            href="https://dholerainfratech.com/projects/westwyn-county"
           />
         </Head>
         <WestWynCounty />
@@ -133,7 +133,7 @@ export default function ProjectDetail({ project }) {
           <meta name="description" content={project.description} />
           <link
             rel="canonical"
-            href="https://dholeragujarat.in/projects/orchid-township"
+            href="https://dholerainfratech.com/projects/orchid-township"
           />
         </Head>
         <OrchidTownship />
@@ -149,7 +149,7 @@ export default function ProjectDetail({ project }) {
           <meta name="description" content={project.description} />
           <link
             rel="canonical"
-            href="https://dholeragujarat.in/projects/paradise-2"
+            href="https://dholerainfratech.com/projects/paradise-2"
           />
         </Head>
         <Paradise2 />
@@ -161,18 +161,18 @@ export default function ProjectDetail({ project }) {
   return (
     <>
       <Head>
-        <title>{`${project.name} - Dholera Project Details | DholeraGujarat.in`}</title>
+        <title>{`${project.name} - Dholera Project Details | Dholera Infratech`}</title>
         <meta name="description" content={project.description} />
         <meta
           name="keywords"
           content={`${project.name}, Dholera project, Dholera plots, investment in Dholera, Dholera SIR, smart city Gujarat`}
         />
-        <meta name="author" content="DholeraGujarat.in" />
+        <meta name="author" content="Dholera Infratech" />
         <meta name="robots" content="index, follow" />
 
         <link
           rel="canonical"
-          href={`https://dholeragujarat.in/projects/${project.slug}`}
+          href={`https://dholerainfratech.com/projects/${project.slug}`}
         />
 
         {/* Open Graph for Facebook & WhatsApp */}
@@ -183,11 +183,11 @@ export default function ProjectDetail({ project }) {
         <meta property="og:description" content={project.description} />
         <meta
           property="og:image"
-          content={`https://dholeragujarat.in${project.image}`}
+          content={`https://dholerainfratech.com${project.image}`}
         />
         <meta
           property="og:url"
-          content={`https://dholeragujarat.in/projects/${project.slug}`}
+          content={`https://dholerainfratech.com/projects/${project.slug}`}
         />
         <meta property="og:type" content="article" />
 
@@ -200,7 +200,7 @@ export default function ProjectDetail({ project }) {
         <meta name="twitter:description" content={project.description} />
         <meta
           name="twitter:image"
-          content={`https://dholeragujarat.in${project.image}`}
+          content={`https://dholerainfratech.com${project.image}`}
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />

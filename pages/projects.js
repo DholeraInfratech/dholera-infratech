@@ -117,8 +117,8 @@ export default function Projects() {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://dholeragujarat.in/projects" />
-        <meta name="author" content="DholeraGujarat.in"/>
+        <link rel="canonical" href="https://dholerainfratech.com/projects" />
+        <meta name="author" content="Dholera Infratech" />
         <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
 
         {/* Open Graph */}
@@ -130,9 +130,9 @@ export default function Projects() {
         />
         <meta
           property="og:image"
-          content="https://dholeragujarat.in/images/westwyn-banner.webp"
+          content="https://dholerainfratech.com/images/westwyn-banner.webp"
         />
-        <meta property="og:url" content="https://dholeragujarat.in/projects" />
+        <meta property="og:url" content="https://dholerainfratech.com/projects" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -143,7 +143,7 @@ export default function Projects() {
         />
         <meta
           name="twitter:image"
-          content="https://dholeragujarat.in/images/westwyn-banner.webp"
+          content="https://dholerainfratech.com/images/westwyn-banner.webp"
         />
 
 
@@ -156,61 +156,61 @@ export default function Projects() {
       "@type": "CollectionPage",
       "name": "Dholera Real Estate Projects",
       "description": "Explore premium residential and commercial projects in Dholera Smart City including WestWyn County, Paradise, Orchid Township, Maple, Marina Bay, and more.",
-      "url": "https://dholeragujarat.in/projects",
+      "url": "https://dholerainfratech.com/projects",
       "publisher": {
         "@type": "Organization",
-        "name": "DholeraGujarat.in",
+        "name": "Dholera Infratech",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://dholeragujarat.in/images/dholera_gujarat_logo.ico"
+          "url": "https://dholerainfratech.com/images/dholera_gujarat_logo.ico"
         }
       },
       "mainEntity": [
         {
           "@type": "Project",
           "name": "WestWyn County",
-          "url": "https://dholeragujarat.in/projects/westwyn-county",
-          "image": "https://dholeragujarat.in/images/westwyn-banner.webp",
+          "url": "https://dholerainfratech.com/projects/westwyn-county",
+          "image": "https://dholerainfratech.com/images/westwyn-banner.webp",
           "description": "WestWyn County is Dholera’s most promising smart investment opportunity with solar-ready plots, legal clearances, EV-ready infrastructure, and gated community features.",
           "status": "Available"
         },
         {
           "@type": "Project",
           "name": "Paradise 2",
-          "url": "https://dholeragujarat.in/projects/paradise-2",
-          "image": "https://dholeragujarat.in/images/paradise2-1.webp",
+          "url": "https://dholerainfratech.com/projects/paradise-2",
+          "image": "https://dholerainfratech.com/images/paradise2-1.webp",
           "description": "Paradise 2 offers a unique blend of luxury and affordability, making it an ideal choice for smart investors.",
           "status": "sold-out"
         },
         {
           "@type": "Project",
           "name": "Orchid Township",
-          "url": "https://dholeragujarat.in/projects/orchid-township",
-          "image": "https://dholeragujarat.in/images/orchid.webp",
+          "url": "https://dholerainfratech.com/projects/orchid-township",
+          "image": "https://dholerainfratech.com/images/orchid.webp",
           "description": "Orchid Township is designed for modern living with eco-friendly features and smart city amenities.",
           "status": "sold-out"
         },
         {
           "@type": "Project",
           "name": "Paradise",
-          "url": "https://dholeragujarat.in/projects/paradise",
-          "image":"https://dholeragujarat.in/images/paradise1-1.webp",
+          "url": "https://dholerainfratech.com/projects/paradise",
+          "image":"https://dholerainfratech.com/images/paradise1-1.webp",
           "description": "Paradise offers a serene living environment with state-of-the-art infrastructure and community facilities.",
           "status": "sold-out"
         },
         {
           "@type": "Project",
           "name": "Maple",
-          "url": "https://dholeragujarat.in/projects/maple",
-          "image": "https://dholeragujarat.in/images/maple.webp",
+          "url": "https://dholerainfratech.com/projects/maple",
+          "image": "https://dholerainfratech.com/images/maple.webp",
           "description": "Maple is a premium residential project offering spacious plots and modern amenities.",
           "status": "sold-out"
         },
         {
           "@type": "Project",
           "name": "Marina Bay",
-          "url": "https://dholeragujarat.in/projects/marina-bay",
-          "image": "https://dholeragujarat.in/images/marina-bay.webp",
+          "url": "https://dholerainfratech.com/projects/marina-bay",
+          "image": "https://dholerainfratech.com/images/marina-bay.webp",
           "description": "Marina Bay is a waterfront project designed for luxury living with stunning views and top-notch facilities.",
           "status": "sold-out"
         }

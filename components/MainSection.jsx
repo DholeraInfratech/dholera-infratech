@@ -41,7 +41,7 @@ const MainSection = () => {
         <p className="text-lg md:text-xl text-[#1a535c] max-w-3xl mx-auto leading-relaxed mb-12 transition-all duration-700 ease-in-out">
           Welcome to{" "}
           <strong className="font-semibold text-[#ff8800]">
-            DholeraGujarat.in
+            Dholera Infratech
           </strong>
           — your trusted platform for exploring premium{" "}
           <strong className="text-[#00796b]">plots in Dholera</strong>, top{" "}
