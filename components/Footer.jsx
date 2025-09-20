@@ -73,7 +73,10 @@ const Footer = () => (
             +91 9540561820
           </a>
         </p>
-        <p>Address: 119 H-Block, First Floor, Noida Sector 63, 201301</p>
+        <p>
+        Head Office: Unit- 620, 6th Floor, JMD Megapolis, Sector-48, Sohna Road, Gurugram, Haryana-122018 <br />
+        <br/>
+        Branch Office: 119 H-Block, First Floor, Noida Sector 63, 201301</p>
       </div>
 
       {/* Socials */}
@@ -91,7 +94,7 @@ const Footer = () => (
             {
               icon: "fa-facebook",
               label: "Facebook",
-              link: "https://www.facebook.com/profile.php?id=61580012777206",
+              link: "https://www.facebook.com/profile.php?id=61580534821548",
             },
             {
               icon: "fa-instagram",

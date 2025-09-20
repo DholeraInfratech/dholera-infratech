@@ -4,7 +4,7 @@ export default function DholeraLandPriceSurge() {
   return (
     <BlogLayout
       title="Dholera Land Prices Jump 10x in a Decade"
-      date="June 24, 2025 • Admin"
+      date="June 24, 2025"
       description="Land rates in Dholera have surged over 10x in 10 years. Explore the key infrastructure projects behind this explosive growth in India’s first smart city."
       image="/images/blog/blog4.webp"
       tags={["DholeraSmartCity", "DholeraInvestment", "LandPriceSurge"]}

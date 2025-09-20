@@ -20,90 +20,6 @@ export default function BlogLayout({
 }) {
   const router = useRouter();
   const slug = router.asPath.replace("/blog/", "").replace("/", ""); // e.g. "airport-phase1"
-  const storageKey = `comments-${slug}`;
-  const likedKey = `likes-${slug}`;
-
-  // State for unique userId + name entered
-  const [userId, setUserId] = useState("");
-  const [user, setUser] = useState(""); // display name input
-
-  const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState("");
-  const [editingId, setEditingId] = useState(null);
-  const [editText, setEditText] = useState("");
-  const [likedComments, setLikedComments] = useState([]);
-
-  // Generate or load unique userId once on mount
-  useEffect(() => {
-    let storedId = localStorage.getItem("userId");
-    if (!storedId) {
-      storedId = generateUserId();
-      localStorage.setItem("userId", storedId);
-    }
-    setUserId(storedId);
-  }, []);
-
-  // Load comments and likes from localStorage based on page slug
-  useEffect(() => {
-    const savedComments = localStorage.getItem(storageKey);
-    if (savedComments) setComments(JSON.parse(savedComments));
-    const savedLiked = localStorage.getItem(likedKey);
-    if (savedLiked) setLikedComments(JSON.parse(savedLiked));
-  }, [storageKey]);
-
-  const handleCommentSubmit = (e) => {
-    e.preventDefault();
-    if (newComment.trim() && user.trim()) {
-      const newEntry = {
-        id: Date.now(),
-        text: newComment.trim(),
-        author: user.trim(),  // display name
-        userId: userId,       // unique user id
-        likes: 0,
-      };
-      const updated = [newEntry, ...comments];
-      setComments(updated);
-      localStorage.setItem(storageKey, JSON.stringify(updated));
-      setNewComment("");
-      setUser("");
-    }
-  };
-
-  const handleDelete = (id) => {
-    const updated = comments.filter((c) => c.id !== id);
-    setComments(updated);
-    localStorage.setItem(storageKey, JSON.stringify(updated));
-    const updatedLiked = likedComments.filter((likedId) => likedId !== id);
-    setLikedComments(updatedLiked);
-    localStorage.setItem(likedKey, JSON.stringify(updatedLiked));
-  };
-
-  const handleLike = (id) => {
-    if (likedComments.includes(id)) return;
-    const updated = comments.map((c) =>
-      c.id === id ? { ...c, likes: c.likes + 1 } : c
-    );
-    setComments(updated);
-    localStorage.setItem(storageKey, JSON.stringify(updated));
-    const updatedLiked = [...likedComments, id];
-    setLikedComments(updatedLiked);
-    localStorage.setItem(likedKey, JSON.stringify(updatedLiked));
-  };
-
-  const handleEdit = (id, text) => {
-    setEditingId(id);
-    setEditText(text);
-  };
-
-  const handleEditSave = (id) => {
-    const updated = comments.map((c) =>
-      c.id === id ? { ...c, text: editText } : c
-    );
-    setComments(updated);
-    localStorage.setItem(storageKey, JSON.stringify(updated));
-    setEditingId(null);
-    setEditText("");
-  };
 
   const siteUrl = `https://dholerainfratech.com${router.asPath}`;
   const siteName = "dholerainfratech.com";
@@ -189,7 +105,7 @@ export default function BlogLayout({
         <div className="prose prose-lg max-w-none">{children}</div>
 
         {/* Tags */}
-        <div className="mt-10 flex flex-wrap gap-3">
+        {/* <div className="mt-10 flex flex-wrap gap-3">
           {tags.map((tag) => (
             <span
               key={tag}
@@ -198,7 +114,7 @@ export default function BlogLayout({
               #{tag}
             </span>
           ))}
-        </div>
+        </div> */}
 
         {/* CTA */}
         <div className="mt-16 text-center">
@@ -212,7 +128,7 @@ export default function BlogLayout({
       </section>
 
       {/* Comments Section */}
-      <section className="bg-gray-50 py-16 px-4 md:px-20 xl:px-64">
+      {/* <section className="bg-gray-50 py-16 px-4 md:px-20 xl:px-64">
         <h3 className="text-2xl font-bold text-black mb-6">
           Comments & Reviews
         </h3>
@@ -308,7 +224,7 @@ export default function BlogLayout({
             <p className="text-gray-500">No comments yet. Be the first!</p>
           )}
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

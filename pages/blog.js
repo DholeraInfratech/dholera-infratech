@@ -7,13 +7,20 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    title: "Nextgen Semiconductors to Build India’s First Silicon Semiconductor City in Dholera, Gujarat",
+    slug: "dholera-nextgen-semicon",
+    excerpt:" Nextgen Semiconductors plans to develop India’s first dedicated Silicon Semiconductor City in Dholera, Gujarat, aiming to transform India into a global hub for semiconductor manufacturing.",
+    image: "/images/blog/nextgen-semicon.jpg",
+    date: "September 17, 2025",
+  },
+  {
     title: "Dholera Land Prices Jump 10x Over a Decade: Market Insights",
     slug: "dholera-land-price-surge",
     excerpt:
       "Times of India reports 10-fold surge in land prices in Dholera SIR—here’s what’s fueling this growth.",
     image: "/images/blog/blog4.webp",
     date: "June 24, 2025",
-    author: "Admin",
+  
   },
   {
     title: "Why Dholera is India’s Smart City of the Future",
@@ -22,7 +29,6 @@ const blogPosts = [
       "Explore why Dholera is emerging as India's top smart city destination and why investors are rushing in.",
     image: "/images/blog/blog1.jpeg",
     date: "June 10, 2025",
-    author: "Admin",
   },
   {
     title: "Top  Real Estate Projects in Dholera You Should Know",
@@ -31,7 +37,6 @@ const blogPosts = [
       "From Paradise 2 to WestWyn County — here are the must-know investment opportunities in Dholera.",
     image: "/images/blog/blog2.jpeg",
     date: "June 5, 2025",
-    author: "Admin",
   },
   {
     title: "How the Dholera SIR is Transforming Gujarat’s Economy",
@@ -40,8 +45,8 @@ const blogPosts = [
       "Learn how Dholera’s Special Investment Region is becoming a major industrial and tech hub in India.",
     image: "/images/blog/blog3.webp",
     date: "June 1, 2025",
-    author: "Admin",
   },
+  
 ];
 
 export default function Blog() {
