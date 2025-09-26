@@ -5,7 +5,7 @@ import Image from "next/image";
 import westwynEstateBanner from "@/public/images/westwyn-estate-banner.webp";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import CostsheetEstates from "../costsheetestates";
+import CostsheetEstates from "../CostsheetEstates";
 
 export default function WestWynEstate() {
   const project = {
