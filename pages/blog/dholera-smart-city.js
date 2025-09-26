@@ -182,7 +182,7 @@ export default function DholeraSmartCity() {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.div className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-md hover:shadow-lg">
-            <a href="/brochure/dholera-investment.pdf" download className="flex items-center gap-2">
+            <a href="/brochure/dholera-brochure.pdf" download className="flex items-center gap-2">
               Download Investment Guide
             </a>
           </motion.div>

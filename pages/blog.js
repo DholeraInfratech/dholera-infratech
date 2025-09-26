@@ -7,6 +7,20 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    title: "PM Modi Inaugurates ₹26,354 Crore Projects in Gujarat Including Major Solar Initiatives",
+    slug: "dholera-pm-inaugrated",
+    excerpt: "Prime Minister Narendra Modi inaugurated projects worth ₹26,354 crore in Gujarat, focusing on renewable energy, infrastructure, and industrial growth, creating new opportunities for investors and residents.",
+    image: "/images/blog/pm-modi-inaugrates.jpg",
+    date: "September 23, 2025",
+  },
+  {
+    title: "Tokyo Electron Expanding Presence in Dholera Smart City",
+    slug: "dholera-tokyo-electron",
+    excerpt: "Tokyo Electron is expanding its operations in Dholera Smart City, marking a major milestone in the city's industrial and technological growth.",
+    image: "/images/blog/tokyo-electron.jpg",
+    date: "September 22, 2025",
+  },
+  {
     title: "Nextgen Semiconductors to Build India’s First Silicon Semiconductor City in Dholera, Gujarat",
     slug: "dholera-nextgen-semicon",
     excerpt:" Nextgen Semiconductors plans to develop India’s first dedicated Silicon Semiconductor City in Dholera, Gujarat, aiming to transform India into a global hub for semiconductor manufacturing.",

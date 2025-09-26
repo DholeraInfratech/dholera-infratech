@@ -15,6 +15,20 @@ import { useState } from "react";
 
 const projects = [
   {
+    name: "Westwyn Estate",
+    slug: "westwyn-estate",
+    images: ["/images/westwyn-estate2.webp","/images/westwyn-estate-banner.webp", "/images/westwyn-estate1.webp",],
+  },
+  {
+    name: "WestWyn County",
+    slug: "westwyn-county",
+    images: [
+      "/images/westwyn-banner.webp",
+      "/images/westwyngate.webp",
+      "/images/westwynmap.webp",
+    ],
+  },
+  {
     name: "Paradise 2",
     slug: "paradise-2",
     images: ["/images/paradise2-1.webp", "/images/paradise2-2.webp"],
@@ -39,15 +53,7 @@ const projects = [
     slug: "marina-bay",
     images: ["/images/marina-bay.webp", "/images/marina-bay2.webp"],
   },
-  {
-    name: "WestWyn County",
-    slug: "westwyn-county",
-    images: [
-      "/images/westwyn-banner.webp",
-      "/images/westwyngate.webp",
-      "/images/westwynmap.webp",
-    ],
-  },
+  
 ];
 
 export default function Gallery() {
@@ -67,7 +73,7 @@ export default function Gallery() {
         />
         <meta
           name="keywords"
-          content="Dholera images, Dholera project photos, Dholera Smart City gallery, Dholera SIR images, investment plots in Dholera, Dholera real estate pictures, Dholera infrastructure, Gujarat smart city plots, dholera images, dholera photos , dholera smart city photos, dholera project images, dholera sir photos, dholera real estate images, dholera investment plots, dholera smart city infrastructure, dholera smart city projects, dholera smart city gallery, dholera sir images, dholera sir photos, dholera sir projects, dholera sir gallery"
+          content="Dholera images, Dholera project photos, Dholera Smart City gallery, Dholera SIR images, dholera photos, Dholera real estate pictures, Dholera infrastructure, Gujarat smart city plots, dholera images, dholera photos , dholera smart city photos, dholera project images, dholera sir photos, dholera real estate images, dholera investment plots, dholera smart city infrastructure, dholera smart city projects, dholera smart city gallery, dholera sir images, dholera sir photos, dholera sir projects, dholera sir gallery"
         />
         <meta name="author" content="Dholera Infratech" />
         <meta name="robots" content="index, follow" />

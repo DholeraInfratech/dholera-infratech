@@ -12,6 +12,7 @@ import Head from "next/head";
 import InvestorCompanies from "@/components/InvestorCompanies";
 import HeroSlider from "@/components/HeroSlider";
 import DholeraInfoSections from "@/components/DholeraInfoSections";
+import EnquiryModal from "@/components/EnquiryModal";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -79,7 +80,7 @@ export default function Home() {
       </Head>
       <Navbar onLoginClick={() => setShowModal(true)} userName={userName} />
       <HeroSlider />
-
+      <EnquiryModal/>
       <MainSection />
       <HeroBanner />
       <InvestorCompanies />

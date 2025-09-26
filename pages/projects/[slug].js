@@ -6,8 +6,39 @@ import Footer from "@/components/Footer";
 import WestWynCounty from "@/components/projects/WestWynCounty";
 import OrchidTownship from "@/components/projects/OrchidTownship";
 import Paradise2 from "@/components/projects/Paradise2";
-
+import WestWynEstate from "@/components/projects/WestWynEstate";
 const projects = [
+  {
+    name: "Westwyn Estate",
+    slug: "westwyn-estate",
+    status: "Available",  
+    description:
+      "Westwyn Estate is a premium residential project located in the heart of Dholera SIR, offering modern amenities and a sustainable lifestyle.",
+    highlights: [ 
+      "Located at Navda - Vadhela State Highway, Dholera",
+      "Zero KM from SIR Boundary",
+      "1.5 KM from Ahmedabad-Bhavnagar Expressway",
+      "Plot sizes from 177 to 300 sq. yd.",
+      "Eco-friendly and sustainable community design",
+      "24x7 security with gated access",
+    ],
+    image: "/images/westwyn-estate-banner.webp",
+  },
+  {
+    name: "WestWyn County",
+    slug: "westwyn-county",
+    status: "Available",
+    description:
+      "WestWyn County is a visionary plotted development located in the Activation Zone of Dholera SIR...",
+    highlights: [
+      "Located at Fedra–Pipli Highway, Dholera",
+      "Plot sizes from 150 to 325 sq. yd.",
+      "Immediate possession with legal clearances",
+      "EV charging points and solar-ready design",
+      "24x7 gated security and smart app-based management",
+    ],
+    image: "/images/westwyn-banner.webp",
+  },
   {
     name: "Paradise 2",
     slug: "paradise-2",
@@ -72,22 +103,7 @@ const projects = [
       "High Investment Potential",
     ],
     image: "/images/dholera-projects-image.webp",
-  },
-  {
-    name: "WestWyn County",
-    slug: "westwyn-county",
-    status: "Available",
-    description:
-      "WestWyn County is a visionary plotted development located in the Activation Zone of Dholera SIR...",
-    highlights: [
-      "Located at Fedra–Pipli Highway, Dholera",
-      "Plot sizes from 150 to 325 sq. yd.",
-      "Immediate possession with legal clearances",
-      "EV charging points and solar-ready design",
-      "24x7 gated security and smart app-based management",
-    ],
-    image: "/images/westwyn-banner.webp",
-  },
+  }
 ];
 
 export async function getStaticPaths() {
@@ -106,6 +122,25 @@ export async function getStaticProps({ params }) {
 
 export default function ProjectDetail({ project }) {
   // Render full custom page component based on slug
+  if (project.slug === "westwyn-estate") {
+    return (
+      <>
+        <Head>  
+          <title>Westwyn Estate – Premium Plots in Dholera</title>
+          <meta
+            name="description"
+            content="Westwyn Estate offers NA/NOC-approved plots in Dholera Smart City. Immediate possession, trusted developer, gated community with modern amenities."
+          />
+          <link
+            rel="canonical"
+            href="https://dholerainfratech.com/projects/westwyn-estate"
+          />
+        </Head>
+        <WestWynEstate />
+      </>
+    );
+  }
+
   if (project.slug === "westwyn-county") {
     return (
       <>

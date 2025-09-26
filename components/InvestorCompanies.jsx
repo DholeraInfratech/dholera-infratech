@@ -221,7 +221,7 @@ const InvestorCompanies = () => {
           Download the latest investment brochure with detailed projects, locations, and investment plans.
         </p>
         <a
-          href="./brochure/dholera-investment.pdf"
+          href="./brochure/dholera-brochure.pdf"
           download
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
         >

@@ -1,13 +1,66 @@
 "use client";
-
+import { useState } from "react";
 import Image from "next/image";
 import westwynBanner from "@/public/images/westwyn-banner.webp";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import CostSheet from "../CostSheet";
 import WhatsAppFloatingButton from "../WhatsAppFloatingButton";
+import { desc } from "framer-motion/client";
 
 export default function WestWynCounty() {
+
+  const project = {
+    name: "WestWyn County",
+    slug: "westwyn-county",
+    status :"available",
+    description: "WestWyn County offers NA/NOC-approved plots in Dholera Smart City. Immediate possession, trusted developer, gated community with modern amenities.",
+  };
+
+  // Modal state
+    const [modalOpen, setModalOpen] = useState(false);
+    const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
+    const [loading, setLoading] = useState(false);
+    const [successMsg, setSuccessMsg] = useState("");
+    const [errorMsg, setErrorMsg] = useState("");
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+      setSuccessMsg("");
+      setErrorMsg("");
+  
+      // Trigger instant download
+      const brochureFile =
+        project.slug === "westwyn-estate"
+          ? "/brochure/westwyn-estate-brochure.pdf"
+          : "/brochure/westwyn-county-brochure.pdf";
+  
+      const link = document.createElement("a");
+      link.href = brochureFile;
+      link.download = brochureFile.split("/").pop();
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  
+      // Send form data to API asynchronously (don't wait for it)
+      fetch("/api/send-brochure", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, project: project.slug }),
+      }).catch((err) => console.error("Email API error:", err));
+  
+      // Show instant success and close modal
+      setSuccessMsg("Your brochure is downloading!");
+      setFormData({ name: "", email: "", phone: "" });
+      setTimeout(() => setModalOpen(false), 2000);
+      setLoading(false);
+    };
+
   return (
     <>
       <Navbar />
@@ -55,6 +108,15 @@ export default function WestWynCounty() {
               more than just land — it’s your gateway to India’s first and
               largest government-backed smart city transformation.
             </p>
+            <div className="mt-8 text-center">
+            <button
+              download
+              onClick={() => setModalOpen(true)}
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300 shadow-sm"
+            >
+              📄 Download Brochure
+            </button>
+          </div>
           </section>
 
           {/* Cards Container */}
@@ -180,12 +242,12 @@ export default function WestWynCounty() {
             </h3>
             <address className="not-italic space-y-5 text-gray-700 max-w-3xl mx-auto text-base flex flex-col gap-3">
               <p>
-                <strong>🏢 Head Office:</strong> H-119 ,Sector-63, Noida, Uttar
+                <strong>🏢 Branch Office:</strong> H-119 ,Sector-63, Noida, Uttar
                 Pradesh
               </p>
               <p>
-                <strong>🏬 Corporate Office:</strong> JMD Megapolis, Gurugram,
-                Haryana
+                <strong>🏬 Head Office:</strong> 620, 6th Floor, JMD Megapolis,
+              Sector 48, Gurugram, Haryana 122001
               </p>
               <p>
                 <strong>📍 Site Office:</strong> Fedra-Pipli Road, State
@@ -237,6 +299,62 @@ export default function WestWynCounty() {
         </article>
       </main>
       <Footer />
+
+      {/* Modal */}
+      {modalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md w-full relative">
+            <button
+              onClick={() => setModalOpen(false)}
+              className="absolute top-3 right-3 text-black hover:text-black font-bold text-lg"
+            >
+              ✕
+            </button>
+            <h2 className="text-2xl font-bold text-green-900 mb-4">
+              Download Brochure
+            </h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
+                required
+              />
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition duration-300"
+              >
+                {loading ? "Sending..." : "Download"}
+              </button>
+            </form>
+
+            {/* {successMsg && <p className="text-green-600 mt-2">{successMsg}</p>} */}
+            {/* {errorMsg && <p className="text-red-600 mt-2">{errorMsg}</p>} */}
+          </div>
+        </div>
+      )}
     </>
   );
 }

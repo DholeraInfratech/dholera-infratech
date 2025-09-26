@@ -15,7 +15,7 @@ export default function Navbar() {
       <nav className="bg-gradient-to-r from-[#0f2027] via-[#2c5364] to-[#c6b776] shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-3 py-3 flex justify-between items-center">
           {/* Logo Section */}
-          <div className="flex items-center space-x-3">
+         <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-3">
               <img
                 src="/images/dholera_gujarat_logo.webp"
@@ -70,7 +70,7 @@ export default function Navbar() {
               href="/blog"
               className="hover:text-[#ffd200] transition duration-200"
             >
-              Blog
+              Blogs
             </Link>
             <Link
               href="/gallery"

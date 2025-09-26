@@ -7,6 +7,37 @@ import Head from "next/head";
 
 const projects = [
   {
+    name: "Westwyn Estate",
+    slug: "westwyn-estate",
+    status: "Available",
+    description:
+      "Westwyn Estate is a premium residential project located in the heart of Dholera SIR, offering modern amenities and a sustainable lifestyle.",
+    highlights: [
+      "Located at Navda - Vadhela State Highway, Dholera",
+      "0 KM from Dholera SIR Boundary",
+      "EV Charging Stations & Smart Infrastructure",
+      "Plot sizes from 177 to 300 sq. yd.",
+      "Title Clear, NA/NOC Obtained AUDA Approved",
+      "Zero Land Filling"
+    ],
+    image: "/images/westwyn-estate-banner.webp",
+  },
+  {
+    name: "WestWyn County",
+    slug: "westwyn-county",
+    status: "Available",
+    description:
+      "WestWyn County is Dholera’s most promising smart investment opportunity with solar-ready plots, legal clearances, EV-ready infrastructure, and gated community features.",
+    highlights: [
+      "Located at Fedra–Pipli Highway, Dholera",
+      "Plot sizes from 150 to 325 sq. yd.",
+      "Immediate possession with legal clearances",
+      "EV charging points and solar-ready design",
+      "24x7 gated security and smart app-based management",
+    ],
+    image: "/images/westwyn-banner.jpg",
+  },
+  {
     name: "Paradise 2",
     slug: "paradise-2",
     status: "Sold Out",
@@ -71,25 +102,12 @@ const projects = [
     ],
     image: "/images/marina-bay.webp",
   },
-  {
-    name: "WestWyn County",
-    slug: "westwyn-county",
-    status: "Available",
-    description:
-      "WestWyn County is Dholera’s most promising smart investment opportunity with solar-ready plots, legal clearances, EV-ready infrastructure, and gated community features.",
-    highlights: [
-      "Located at Fedra–Pipli Highway, Dholera",
-      "Plot sizes from 150 to 325 sq. yd.",
-      "Immediate possession with legal clearances",
-      "EV charging points and solar-ready design",
-      "24x7 gated security and smart app-based management",
-    ],
-    image: "/images/westwyn-banner.jpg",
-  },
 ];
 
 export default function Projects() {
-  const liveProject = projects.find((p) => p.name === "WestWyn County");
+  const liveProjects = projects.filter(
+    (p) => p.status.toLowerCase() === "available"
+  );
 
   return (
     <>
@@ -132,7 +150,10 @@ export default function Projects() {
           property="og:image"
           content="https://dholerainfratech.com/images/westwyn-banner.webp"
         />
-        <meta property="og:url" content="https://dholerainfratech.com/projects" />
+        <meta
+          property="og:url"
+          content="https://dholerainfratech.com/projects"
+        />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -145,8 +166,6 @@ export default function Projects() {
           name="twitter:image"
           content="https://dholerainfratech.com/images/westwyn-banner.webp"
         />
-
-
 
         {/* Structured Data: CollectionPage with all projects */}
         <script type="application/ld+json">
@@ -166,6 +185,14 @@ export default function Projects() {
         }
       },
       "mainEntity": [
+        {
+          "@type": "Project",
+          "name": "Westwyn Estate",
+          "url": "https://dholerainfratech.com/projects/westwyn-estate",
+          "image": "https://dholerainfratech.com/images/westwyn-estate-banner.webp",
+          "description": "Westwyn Estate is a premium residential project located in the heart of Dholera SIR, offering modern amenities and a sustainable lifestyle.",
+          "status": "Available"
+        },
         {
           "@type": "Project",
           "name": "WestWyn County",
@@ -230,45 +257,56 @@ export default function Projects() {
 
           {/* Live Project */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-green-800 border-b-4 border-green-600 pb-2 mb-6">
-              🚀 Live Project: {liveProject.name}
-            </h2>
+  <h2 className="text-3xl font-bold text-green-800 border-b-4 border-green-600 pb-2 mb-6">
+    🚀 Live Projects
+  </h2>
 
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden grid md:grid-cols-2 gap-6">
-              <div className="relative h-72 sm:h-full w-full">
-                <Image
-                  src={liveProject.image}
-                  alt={liveProject.name}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                <span className="absolute top-4 left-4 bg-green-700 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                  {liveProject.status}
-                </span>
-              </div>
+  {/* Grid for multiple projects side by side */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    {liveProjects.map((project, idx) => (
+      <div
+        key={idx}
+        className="bg-white shadow-lg rounded-xl overflow-hidden"
+      >
+        {/* Image on top */}
+        <div className="relative h-72 w-full">
+          <Image
+            src={project.image}
+            alt={project.name}
+            fill
+            className="object-cover "
+            priority
+          />
+          <span className="absolute top-4 left-4 bg-green-700 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+            {project.status}
+          </span>
+        </div>
 
-              <div className="p-8">
-                <h3 className="text-3xl font-semibold text-green-900 mb-4">
-                  {liveProject.name}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  {liveProject.description}
-                </p>
-                <ul className="list-disc list-inside text-gray-700 text-base space-y-1 mb-6">
-                  {liveProject.highlights.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
-                </ul>
-                <Link
-                  href={`/projects/${liveProject.slug}`}
-                  className="inline-block bg-green-700 hover:bg-green-800 text-white font-medium px-6 py-2 rounded-lg shadow hover:shadow-lg transition"
-                >
-                  View Project Details
-                </Link>
-              </div>
-            </div>
-          </div>
+        {/* Details below image */}
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-green-900 mb-3">
+            {project.name}
+          </h3>
+          <p className="text-gray-700 leading-relaxed mb-3">
+            {project.description}
+          </p>
+          <ul className="list-disc list-inside text-gray-700 text-base space-y-1 mb-4">
+            {project.highlights.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+          <Link
+            href={`/projects/${project.slug}`}
+            className="inline-block bg-green-700 hover:bg-green-800 text-white font-medium px-5 py-2 rounded-lg shadow hover:shadow-lg transition"
+          >
+            View Project Details
+          </Link>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
 
           {/* All Projects */}
           <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-2 border-blue-500 pb-2">
