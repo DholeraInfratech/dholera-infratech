@@ -21,6 +21,8 @@
   <url><loc>https://dholerainfratech.com/blog/dholera-smart-city</loc><priority>0.64</priority></url>
   <url><loc>https://dholerainfratech.com/blog/top-real-estate-projects</loc><priority>0.64</priority></url>
   <url><loc>https://dholerainfratech.com/blog/dholera-nextgen-semicon</loc><priority>0.64</priority></url>
+  <url><loc>https://dholerainfratech.com/blog/dholera-tokyo-electron</loc><priority>0.64</priority></url>
+  <url><loc>https://dholerainfratech.com/blog/dholera-pm-inaugrated</loc><priority>0.64</priority></url>
 
   <!-- Projects -->
   <url><loc>https://dholerainfratech.com/projects/paradise</loc><priority>0.80</priority></url>
@@ -29,5 +31,6 @@
   <url><loc>https://dholerainfratech.com/projects/maple</loc><priority>0.80</priority></url>
   <url><loc>https://dholerainfratech.com/projects/marina-bay</loc><priority>0.80</priority></url>
   <url><loc>https://dholerainfratech.com/projects/westwyn-county</loc><priority>0.80</priority></url>
+  <url><loc>https://dholerainfratech.com/projects/westwyn-estate</loc><priority>0.80</priority></url>
 
 </urlset>
