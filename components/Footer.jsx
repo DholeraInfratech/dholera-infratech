@@ -86,11 +86,7 @@ const Footer = () => (
         </h4>
         <div className="flex flex-wrap gap-3">
           {[
-            {
-              icon: "fa-twitter",
-              label: "Twitter",
-              link: "https://twitter.com/",
-            },
+           
             {
               icon: "fa-facebook",
               label: "Facebook",
@@ -100,6 +96,11 @@ const Footer = () => (
               icon: "fa-instagram",
               label: "Instagram",
               link: "https://www.instagram.com/dholerainfratechofficial/",
+            },
+             {
+              icon: "fa-youtube",
+              label: "Youtube",
+              link: "https://www.youtube.com/@dholerainfratech",
             },
             {
               icon: "fa-linkedin",

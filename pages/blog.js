@@ -7,6 +7,13 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    title: "FUJIFILM India Launches DR X-Ray Facility at Dholera CHC",
+    slug: "dholera-fujifilm-chc",
+    excerpt: "FUJIFILM India has launched a cutting-edge DR X-Ray facility at Dholera Community Health Centre, strengthening healthcare infrastructure and improving medical access for residents of Dholera Smart City.",
+    image: "/images/blog/dholera-fujifilm-chc.jpg",
+    date: "September 30, 2025",
+  },
+  {
     title: "PM Modi Inaugurates ₹26,354 Crore Projects in Gujarat Including Major Solar Initiatives",
     slug: "dholera-pm-inaugrated",
     excerpt: "Prime Minister Narendra Modi inaugurated projects worth ₹26,354 crore in Gujarat, focusing on renewable energy, infrastructure, and industrial growth, creating new opportunities for investors and residents.",

@@ -15,6 +15,7 @@ import DholeraInfoSections from "@/components/DholeraInfoSections";
 import EnquiryModal from "@/components/EnquiryModal";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import DholeraInMotion from "@/components/DholeraInMotion";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -99,7 +100,7 @@ export default function Home() {
           />
         )}
       </AnimatePresence>
-
+      <DholeraInMotion/>
       <MapDirections />
       <Footer />
     </>
