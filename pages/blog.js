@@ -7,6 +7,13 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    title: "Inox Air Starts Specialty Gas Hub Construction in Dholera",
+    slug: "dholera-air-inox",
+    excerpt: "Inox Air Products has begun construction of a state-of-the-art specialty gas hub in Dholera Smart City, boosting industrial growth and supporting India’s semiconductor and high-tech industries.",
+    image: "/images/blog/dholera-inox-air.jpg",
+    date: "October 3, 2025",
+  },
+  {
     title: "FUJIFILM India Launches DR X-Ray Facility at Dholera CHC",
     slug: "dholera-fujifilm-chc",
     excerpt: "FUJIFILM India has launched a cutting-edge DR X-Ray facility at Dholera Community Health Centre, strengthening healthcare infrastructure and improving medical access for residents of Dholera Smart City.",
