@@ -42,88 +42,119 @@ const Footer = () => (
         <h4 className="font-semibold text-xl mb-3 border-b border-white/30 pb-1">
           Quick Links
         </h4>
-        {["Home", "About", "Projects", "Contact","Blog","Gallery"].map((text) => (
-          <a
-            key={text}
-            href={text === "Home" ? "/" : `/${text.toLowerCase()}`}
-            className="block text-white opacity-90 hover:text-[#ffd200] transition-colors duration-200 mb-2"
-          >
-            {text}
-          </a>
-        ))}
+        {["Home", "About", "Projects", "Contact", "Blog", "Gallery"].map(
+          (text) => (
+            <a
+              key={text}
+              href={text === "Home" ? "/" : `/${text.toLowerCase()}`}
+              className="block text-white opacity-90 hover:text-[#ffd200] transition-colors duration-200 mb-2"
+            >
+              {text}
+            </a>
+          )
+        )}
       </div>
 
       {/* Contact */}
-      <div className="flex-1 min-w-[220px]">
-        <h4 className="font-semibold text-xl mb-3 border-b border-white/30 pb-1">
-          Contact
-        </h4>
-        <p className="mb-2">
-          Email:{" "}
-          <a
-            href="mailto:dholerainfratech.in@gmail.com"
-            className="hover:text-[#ffd200]"
-          >
-            dholerainfratech.in@gmail.com
-          </a>
-        </p>
-        <p className="mb-2">
-          Phone:{" "}
-          <a href="tel:+919540561820" className="hover:text-[#ffd200]">
-            +91 9540561820
-          </a>
-        </p>
-        <p>
-        Head Office: Unit- 620, 6th Floor, JMD Megapolis, Sector-48, Sohna Road, Gurugram, Haryana-122018 <br />
-        <br/>
-        Branch Office: 119 H-Block, First Floor, Noida Sector 63, 201301</p>
-      </div>
+<div className="flex-1 min-w-[220px] text-[1rem]">
+  <h4 className="font-semibold text-xl mb-3 border-b border-[#ffd200] pb-1 text-[#ffd200]">
+    Contact
+  </h4>
 
-      {/* Socials */}
-      <div className="flex-1 min-w-[220px]">
-        <h4 className="font-semibold text-xl mb-3 border-b border-white/30 pb-1">
-          Follow Us
-        </h4>
-        <div className="flex flex-wrap gap-3">
-          {[
-           
-            {
-              icon: "fa-facebook",
-              label: "Facebook",
-              link: "https://www.facebook.com/profile.php?id=61580534821548",
-            },
-            {
-              icon: "fa-instagram",
-              label: "Instagram",
-              link: "https://www.instagram.com/dholerainfratechofficial/",
-            },
-             {
-              icon: "fa-youtube",
-              label: "Youtube",
-              link: "https://www.youtube.com/@dholerainfratech",
-            },
-            {
-              icon: "fa-linkedin",
-              label: "LinkedIn",
-              link: "https://linkedin.com/",
-            },
-          ].map(({ icon, label, link }) => (
-            <a
-              key={label}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white hover:text-[#ffd200] transition duration-200 text-[1.1rem]"
-            >
-              <i className={`fab ${icon} text-[1.4rem]`}></i> {label}
-            </a>
-          ))}
+  <p className="mb-2">
+    <span className="text-[#ffd200] font-medium">Email:</span>{" "}
+    <a
+      href="mailto:dholerainfratech.in@gmail.com"
+      className="hover:text-[#fff] transition duration-200 font-medium"
+    >
+      dholerainfratech.in@gmail.com
+    </a>
+  </p>
+
+  <p className="mb-2">
+    <span className="text-[#ffd200] font-medium">Phone:</span>{" "}
+    <a
+      href="tel:+917440055055"
+      className="hover:text-[#fff] transition duration-200 font-extrabold"
+    >
+      +91 7440 055 055
+    </a>
+  </p>
+
+  <p className="leading-relaxed text-[0.95rem]">
+    <span className="text-[#ffd200] font-medium">Head Office:</span> <br />
+    Unit-620, 6th Floor, JMD Megapolis, Sector-48, Sohna Road,{" "}
+    <span className="text-white/90">Gurugram, Haryana - 122018</span>
+    <br />
+    <br />
+    <span className="text-[#ffd200] font-medium">Branch Office:</span> <br />
+    119 H-Block, First Floor, Noida Sector 63,{" "}
+    <span className="text-white/90">U.P - 201301</span>
+  </p>
+</div>
+
+
+      {/* Socials - Vertical Icons */}
+<div className="flex-1 min-w-[220px]">
+  <h4 className="font-semibold text-xl mb-4 border-b border-white/30 pb-1">
+    Follow Us
+  </h4>
+  <div className="flex flex-col items-start gap-3 mt-4">
+    {[
+      {
+        icon: "fa-facebook-f",
+        label: "Facebook",
+        link: "https://www.facebook.com/profile.php?id=61580534821548",
+        color: "#1877F2",
+      },
+      {
+        icon: "fa-instagram",
+        label: "Instagram",
+        link: "https://www.instagram.com/dholerainfratechofficial/",
+        gradient:
+          "linear-gradient(45deg, #feda75,  #fa7e1e,  #d62976,  #962fbf,  #4f5bd5)",
+      },
+      {
+        icon: "fa-youtube",
+        label: "YouTube",
+        link: "https://www.youtube.com/@dholerainfratech",
+        color: "#FF0000",
+      },
+      // {
+      //   icon: "fa-linkedin-in",
+      //   label: "LinkedIn",
+      //   link: "https://linkedin.com/",
+      //   color: "#0A66C2",
+      // },
+    ].map(({ icon, label, link, color, gradient }) => (
+      <a
+        key={label}
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 text-white hover:text-[#ffd200] transition duration-200"
+      >
+        <div
+          className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md hover:scale-110"
+          style={{
+            background: gradient || color,
+            boxShadow: gradient
+              ? "0 0 10px rgba(221,42,123,0.5)"
+              : `0 0 10px ${color}55`,
+          }}
+        >
+          <i className={`fab ${icon} text-white text-2xl`}></i>
         </div>
-      </div>
+        <span className="text-[1.1rem]">{label}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
     </div>
 
     {/* Divider and Copyright */}
-    <div className="relative z-[2] mt-12 border-t border-white/20 pt-6 text-center text-white text-sm opacity-70">
+    <div className="relative z-[2] mt-12 border-t border-white/20 pt-6 text-center text-white text-md ">
       Dholera Infratech &copy; {new Date().getFullYear()} . All rights reserved.
     </div>
 

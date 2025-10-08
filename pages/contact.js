@@ -117,7 +117,7 @@ export default function Contact() {
         "logo": "https://dholerainfratech.com/images/dholera_gujarat_logo.ico",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+91-9540561820",
+          "telephone": "+91-7440055055",
           "contactType": "Customer Service",
           "areaServed": "IN",
           "availableLanguage": ["English", "Hindi", "Gujarati"]

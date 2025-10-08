@@ -86,6 +86,22 @@ const investorData = [
       "Aditya Birla Group is investing in sustainable chemical manufacturing in Dholera industrial zones.",
     url: "https://www.adityabirla.com",
   },
+  {
+    name: "Inox Air",
+    logo: "/images/investors/inox-air.webp",
+    project:"Speciality Gases Hub",
+    description:
+      "Inox Air is setting up a manufacturing facility for specialty gases in Dholera.",
+    url: "https://www.inoxair.com",
+  },
+  {
+    name:"Tokyo Electron",
+    logo:"/images/investors/tel.webp",
+    project:"Semiconductor Manufacturing",
+    description:
+      "Tokyo Electron is establishing a semiconductor manufacturing facility in Dholera.",
+    url: "https://www.tel.com",
+  },
 ];
 
 const InvestorCompanies = () => {
@@ -170,7 +186,7 @@ const InvestorCompanies = () => {
         Discover the global giants investing in India's first smart city — Dholera. These strategic investments are shaping India's future infrastructure, energy, and defense capabilities.
       </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {investorData.map((company, index) => (
           <motion.div
             key={index}

@@ -278,15 +278,15 @@ export default function WestWynCounty() {
               <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
                 {/* Call Button */}
                 <a
-                  href="tel:+919540561820"
+                  href="tel:+917440055055"
                   className="bg-white border border-green-700 text-green-800 font-semibold px-6 py-3 rounded-full hover:bg-green-100 transition duration-300 shadow-sm"
                 >
-                  📞 Call Us on +91 95405 61820
+                  📞 Call Us on +91 7440 055 055
                 </a>
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/919540561820"
+                  href="https://wa.me/917440055055"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300 shadow-sm"
