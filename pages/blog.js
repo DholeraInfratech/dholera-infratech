@@ -7,6 +7,13 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    title: "iCreate Drone Challenge 2025 Launched to Set New Global Benchmarks in Drone Innovation",
+    slug: "dholera-icreate-drone-challenge",
+    excerpt: "iCreate has officially launched the Drone Challenge 2025 at Dholera, inviting innovators from across the globe to shape the future of unmanned aerial technology and position India as a global drone hub.",
+    image: "/images/blog/icreate-drone-challenge-2025.jpg",
+    date: "October 7, 2025",
+  },
+  {
     title: "Inox Air Starts Specialty Gas Hub Construction in Dholera",
     slug: "dholera-air-inox",
     excerpt: "Inox Air Products has begun construction of a state-of-the-art specialty gas hub in Dholera Smart City, boosting industrial growth and supporting India’s semiconductor and high-tech industries.",
