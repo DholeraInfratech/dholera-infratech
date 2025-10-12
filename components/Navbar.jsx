@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-3">
               <img
-                src="/new-logo.jpg"
+                src="/dholera_logo.jpg"
                 alt="Dholera Logo"
                 className="h-12 w-12 object-contain drop-shadow-lg"
               />
