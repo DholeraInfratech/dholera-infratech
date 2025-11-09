@@ -7,6 +7,21 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    title: "Semiconductor Ecosystem is Transforming Gujarat’s Dholera as a Developed Township",
+    slug: "dholera-semiconductor-ecosystem",
+    excerpt:" With India’s first commercial semiconductor fabrication plant coming up in Gujarat's Dholera, the city is fast emerging as a hub for high-tech industries, residential growth, and smart infrastructure development.",
+    image: "/images/blog/dholera-semiconductor-ecosystem.jpg",
+    date: "November 6, 2025",
+  },
+  {
+    title:"Dholera set to become India's High Tech Manufacturing Hub",
+    slug: "dholera-high-tech-manufacturing",
+    excerpt: "Dholera Smart City is rapidly emerging as India's premier high-tech manufacturing hub, attracting global investments and fostering innovation in sectors like semiconductors, electronics, and renewable energy.",
+    image: "/images/blog/dholera-high-tech-manufacturing.jpg",
+    date: "November 3, 2025",
+  },
+  
+  {
     title: "iCreate Drone Challenge 2025 Launched to Set New Global Benchmarks in Drone Innovation",
     slug: "dholera-icreate-drone-challenge",
     excerpt: "iCreate has officially launched the Drone Challenge 2025 at Dholera, inviting innovators from across the globe to shape the future of unmanned aerial technology and position India as a global drone hub.",
