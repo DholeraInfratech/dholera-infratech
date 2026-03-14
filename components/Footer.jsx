@@ -88,7 +88,7 @@ const Footer = () => (
     <br />
     <br />
     <span className="text-[#ffd200] font-medium">Branch Office:</span> <br />
-    119 H-Block, First Floor, Noida Sector 63,{" "}
+   303, 3rd Floor, H-110, First Floor, Noida Sector 63,{" "}
     <span className="text-white/90">U.P - 201301</span>
   </p>
 </div>

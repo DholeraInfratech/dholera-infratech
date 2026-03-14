@@ -134,7 +134,7 @@ export default function OrchidTownship() {
             </h3>
             <address className="not-italic space-y-5 text-gray-700 max-w-3xl mx-auto text-base flex flex-col gap-3">
               <p>
-                <strong>🏢 Head Office:</strong> H-119, Sector-63, Noida, Uttar Pradesh
+                <strong>🏢 Head Office:</strong> 303, 3rd Floor, H-110 , Sector-63, Noida, Uttar Pradesh
               </p>
               <p>
                 <strong>🏬 Corporate Office:</strong> JMD Megapolis, Gurugram, Haryana

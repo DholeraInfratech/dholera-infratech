@@ -1,7 +1,7 @@
 import React from "react";
 
 const MapDirections = () => {
-  const address = "H119, Sector 63 Rd, H Block, Noida, Uttar Pradesh 201301";
+  const address = " 303, 3rd Floor, H-110, Sector 63 Rd, Noida, Uttar Pradesh 201301";
   const encodedAddress = encodeURIComponent(address);
 
   return (
