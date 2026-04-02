@@ -9,127 +9,55 @@ export default function PrivacyPolicy() {
       <Navbar />
 
       <div className="min-h-screen bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] flex items-center justify-center px-4 py-16">
-        <div className="max-w-4xl w-full bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 text-gray-200">
+        <div className="max-w-7xl w-full bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 text-gray-200">
 
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">
             Privacy Policy
           </h1>
 
-
           <div className="space-y-6 text-sm md:text-base leading-relaxed">
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                1. Information We Collect
-              </h2>
               <p>
-                We may collect personal information when you fill out forms,
-                register, or contact us through the website.
-              </p>
-              <p className="mt-2">
-                This may include your name, phone number, email address, and
-                other relevant details. You may choose not to provide certain
-                information, but it may limit access to some features.
+                The terms of the Dholera Infratech Policy (User agreement) apply to this Privacy statement. When a user registers with Dholera Infratech by completing the Registration form and agreeing to the terms and conditions outlined in the Site Policy, this policy becomes operative.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                2. Use of Information
-              </h2>
-              <p>We use your information to:</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Respond to inquiries</li>
-                <li>Provide project or service details</li>
-                <li>Improve website performance and user experience</li>
-                <li>Contact you via phone, SMS, email, or other channels</li>
-              </ul>
-              <p className="mt-2">
-                By submitting your details, you consent to being contacted by us.
+              <p>
+                To continue this unique experience, Dholera Infratech may monitor a user’s computer’s IP address and store specific data in the form of cookies on your system. By altering your browser’s settings, a user has the choice of accepting or denying this website’s cookies. Without the user’s prior consent, Dholera Infratech will not share the personal information that users disclose about themselves to third parties. However, broad information may be disclosed to outside parties.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                3. Cookies and Tracking
-              </h2>
               <p>
-                We may use cookies and similar technologies to enhance your
-                browsing experience and analyze usage patterns.
-              </p>
-              <p className="mt-2">
-                You can disable cookies through your browser settings.
+                As per our privacy policy, every effort will be made to ensure the security of the information submitted by users, and only with their permission, information will be posted on the website. Only when you register, you will be asked to fill out the registration form; typically, site visitors are not forced to reveal their identities or submit any information about themselves.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                4. Data Sharing
-              </h2>
               <p>
-                We do not sell your personal information. We may share limited
-                data with trusted service providers or when required by law.
+                If information or materials contained on Dholera Infratech are submitted or used without authorization, there will be a violation of copyright laws, privacy laws, trademark laws, publicity laws, related communications statutes, and regulations. You are solely accountable for any activities taken using your username, password, or otherwise.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                5. Data Security
-              </h2>
+              <h2 className="font-semibold text-lg mb-2">Account Information and Security</h2>
               <p>
-                We take reasonable measures to protect your information.
-                However, no online system is completely secure.
+                A user is always free to choose not to provide the information if it is not required. We may require you to create an account, choose a password, and/or provide us with specific personal information in order for you to access certain areas of the Site. The Privacy Policy shall be followed in the storage and use of this information. You acknowledge that we have an established business connection with our service providers and that we may contact you through mobile phone, email, mail, text message, or other means if you fill out any forms on the Site, supply information to us, or make any inquiries. You commit to giving us current, accurate, and complete information on your account. The upkeep of your account’s security is your responsibility. We advise against disclosing your password or account information to anyone.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                6. Account Responsibility
-              </h2>
+              <h2 className="font-semibold text-lg mb-2">Third-Party Content</h2>
               <p>
-                If you create an account, you are responsible for maintaining
-                the confidentiality of your login details and ensuring all
-                information provided is accurate and up to date.
+                The Site might include or show a range of materials and information from third parties (“Third Party Content”), including advertising and promotional content. Any sponsorship, support, or approval by us of any third party or any association between any such third party and us is not in any way implied, suggested, or established by the simple posting of such Third Party Content on or through the Site. Additionally, you acknowledge and accept that we are not in any way liable for the relevance, thoroughness, or accuracy of any Third Party Content when using and accessing the Site. It is not implied by the fact that we display particular third-party content that we endorse the third party or any goods or services they provide.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                7. Third-Party Content
-              </h2>
               <p>
-                Our website may include third-party links or content. We are not
-                responsible for their content or privacy practices.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">
-                8. External Links
-              </h2>
-              <p>
-                This Privacy Policy applies only to our website. External
-                websites are governed by their own policies.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">
-                9. Updates to Policy
-              </h2>
-              <p>
-                We may update this Privacy Policy at any time. Changes will be
-                effective immediately upon posting on this page.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">
-                10. Contact
-              </h2>
-              <p>
-                For any questions regarding this Privacy Policy, please contact
-                Dholera Infratech through the official website.
+                To avoid any misunderstanding, this Agreement only pertains to our Site and does not apply to any other websites that may be accessed through third-party links on the Site. As these agreements might be different from ours, we advise you to carefully read the third-party agreements of any third-party website you choose to access.
               </p>
             </section>
 

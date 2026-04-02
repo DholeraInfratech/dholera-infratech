@@ -9,141 +9,45 @@ export default function TermsAndConditions() {
       <Navbar />
 
       <div className="min-h-screen bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] flex items-center justify-center px-4 py-16">
-        <div className="max-w-4xl w-full bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 text-gray-200">
+        <div className="max-w-7xl w-full bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 text-gray-200">
 
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">
             Terms & Conditions
           </h1>
 
-
           <div className="space-y-6 text-sm md:text-base leading-relaxed">
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">1. Acceptance</h2>
               <p>
-                Dholera Infratech (“we”, “our”, or “us”) operates this website.
-                By accessing or using this site, you agree to comply with these
-                Terms & Conditions.
+                Dholera Infratech or one of its affiliates (collectively, “Dholera Infratech”) hosts this website. The terms and conditions of any other agreement you might have with Dholera Infratech are unaffected by this Agreement in any way. This Agreement and the Site are subject to modification at any moment. If we decide to alter the Agreement, we will update the date and publish a new version on the Site. You renounce any right you may have to obtain particular notice of such changes or modifications, and any changes or modifications will take effect straight away upon publication on the Site.
               </p>
+
               <p className="mt-2">
-                We reserve the right to update or modify these terms at any time
-                without prior notice. Changes will be effective immediately upon
-                posting. Continued use of the website constitutes your acceptance
-                of the revised terms. If you do not agree, please stop using the site.
+                Your usage of the Site will evidence your agreement to the updated Agreement. In order to understand the terms and conditions that apply to your use of the Site, you should routinely review the Agreement and the applicable policies. You must discontinue using the Site right away if you do not accept the modified terms. You acknowledge that stopping usage of the Site is your sole and exclusive recourse with regard to any modifications to this agreement. You represent and affirm that you have the authority to (a) accept these terms on behalf of any business, organization, or other entity of any type and (b) bind that business, organization, or entity to this Agreement if you are accessing or using the Site on its behalf.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">2. Use of Website</h2>
-              <p>You agree to use this website only for lawful purposes.</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>No fraudulent or illegal activity</li>
-                <li>No unauthorized access to systems or data</li>
-                <li>No misuse that harms the company or other users</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">3. Eligibility</h2>
               <p>
-                This website is intended for individuals who are at least 18
-                years old. By using the site, you confirm that you meet this
-                requirement and are legally capable of entering into a binding agreement.
+                Copyright, intellectual property laws, and other jurisdictions protect the Site’s content, structure, “look and feel,” and all other features. Without our expressive written authorization, you are not permitted to sell, license, distribute, copy, publish, publicly perform display, alter, adapt, translate, or create derivative works from the Site or any portion of the Site. All rights that aren’t given explicitly in this Agreement are reserved by us. Furthermore, you agree that we will vigorously and legally protect our intellectual property rights with regard to the Site.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                4. Intellectual Property
-              </h2>
               <p>
-                All content on this website—including text, images, design,
-                layout, and branding—is the property of Dholera Infratech and
-                protected by applicable laws.
-              </p>
-              <p className="mt-2">
-                You may not copy, reproduce, distribute, modify, or use any
-                content without prior written permission.
+                Persons under the age of eighteen (18) are not permitted or intended to use the Site. You guarantee that you are at least eighteen (18) years old and that you agree to and will comply with all of this Agreement’s terms and conditions by using the Site. We may, at any time, in our sole discretion, and with or without prior notice: (i) terminate your access to or use of the Site (or any portion, aspect, or feature thereof); or (ii) delete any content or information that you have posted on the Site if we have reason to believe that you are under the age of eighteen (18) or are not old enough to consent to and be legally bound by this Agreement.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">
-                5. Changes to Services
-              </h2>
               <p>
-                We reserve full discretion to modify, update, suspend, or
-                discontinue any part of the website or its services at any time
-                without notice.
+                The Site’s specific features and functionality are dynamic and subject to change at any time. Regarding how the Site is run, we reserve absolute and total discretion. Without prior warning, we retain the right to modify the terms and conditions. Additionally, we have the right to revoke, suspend, or end any service or operation of the Site at any time. You agree not to use the website or its materials for any improper, illegal, or potentially harmful purposes that could defame or otherwise belittle another person.
               </p>
             </section>
 
             <section>
-              <h2 className="font-semibold text-lg mb-2">6. Termination</h2>
               <p>
-                We may suspend or terminate your access to the website at any
-                time, with or without notice, if you violate these terms or
-                applicable laws.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">
-                7. User Responsibility
-              </h2>
-              <p>
-                Your use of the website is at your own risk. You are responsible
-                for ensuring that your use complies with applicable laws and regulations.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">8. Disclaimer</h2>
-              <p>
-                All content and services on this website are provided on an
-                <span className="italic"> “as is” </span> and
-                <span className="italic"> “as available” </span> basis.
-              </p>
-              <p className="mt-2">
-                We do not guarantee accuracy, completeness, uninterrupted access,
-                or suitability for any specific purpose.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">
-                9. Limitation of Liability
-              </h2>
-              <p>
-                Dholera Infratech shall not be liable for any direct, indirect,
-                or incidental damages arising from the use or inability to use
-                the website, errors in content, or unauthorized access to data.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">
-                10. Third-Party Content
-              </h2>
-              <p>
-                This website may include links to third-party websites. We are
-                not responsible for their content, services, or policies.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">11. Governing Law</h2>
-              <p>
-                These Terms & Conditions are governed by the laws of India. Any
-                disputes shall be subject to the jurisdiction of Indian courts.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-semibold text-lg mb-2">12. Contact</h2>
-              <p>
-                For any questions regarding these Terms & Conditions, please
-                contact Dholera Infratech through the official website.
+                In regards to our Terms and Conditions, the use of the site and its materials, as well as access to them, is expressly acknowledged as being at your own risk. The site (including all site materials, third-party content, and all products and services offered on or through the site) is given based on “as is” and “as available”, unless otherwise clearly stated in this agreement.
               </p>
             </section>
 
