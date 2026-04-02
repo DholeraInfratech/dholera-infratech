@@ -37,22 +37,38 @@ const Footer = () => (
         </p>
       </div>
 
-      {/* Links */}
+     {/* Links */}
       <div className="flex-1 min-w-[200px]">
         <h4 className="font-semibold text-xl mb-3 border-b border-white/30 pb-1">
           Quick Links
         </h4>
-        {["Home", "About", "Projects", "Contact", "Blog", "Gallery", "Terms", "Privacy"].map(
-          (text) => (
+        {[
+          "Home",
+          "About",
+          "Projects",
+          "Contact",
+          "Blog",
+          "Gallery",
+          "Terms",
+          "Privacy",
+        ].map((text) => {
+          const displayText =
+            text === "Terms"
+              ? "Terms and Conditions"
+              : text === "Privacy"
+              ? "Privacy Policy"
+              : text;
+
+          return (
             <a
               key={text}
               href={text === "Home" ? "/" : `/${text.toLowerCase()}`}
               className="block text-white opacity-90 hover:text-[#ffd200] transition-colors duration-200 mb-2"
             >
-              {text}
+              {displayText}
             </a>
-          )
-        )}
+          );
+        })}
       </div>
 
       {/* Contact */}
