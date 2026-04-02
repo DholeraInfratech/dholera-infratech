@@ -19,6 +19,7 @@ export default function Contact() {
     phone: "",
     message: "",
   });
+  const [consent, setConsent] = useState(false); // <-- Added consent state
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -43,6 +44,11 @@ export default function Contact() {
     if (!phoneRegex.test(formData.phone)) {
       return setError("Please enter a valid 10-digit phone number.");
     }
+    if (!consent) {
+      return setError(
+        "Please authorize us to contact you by accepting the    consent checkbox.",
+      );
+    }
 
     setError("");
     setSuccess("");
@@ -58,6 +64,7 @@ export default function Contact() {
       if (res.ok) {
         setSuccess(data.message || "Message sent successfully!");
         setFormData({ name: "", email: "", phone: "", message: "" });
+        setConsent(false); // reset checkbox after success
       } else {
         setError(data.message || "Something went wrong. Try again.");
       }
@@ -68,67 +75,84 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <title>
+          Contact Us | Dholera Smart City Plots & Real Estate - Dholera
+          Infratech
+        </title>
+        <meta
+          name="description"
+          content="Contact Dholera Infratech for expert guidance on investing in Dholera Smart City. Reach us for queries about residential and commercial plots, property rates, and site visits."
+        />
+        <meta
+          name="keywords"
+          content="Dholera Contact, Contact Dholera Infratech, Dholera Smart City Contact, Plots in Dholera, Property Dealer Dholera, Investment in Dholera, Dholera Real Estate"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Dholera Infratech" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/images/dholera_infratech_logo.ico" />
+        <link rel="canonical" href="https://dholerainfratech.com/contact" />
 
-<Head>
-  <title>Contact Us | Dholera Smart City Plots & Real Estate - Dholera Infratech</title>
-  <meta
-    name="description"
-    content="Contact Dholera Infratech for expert guidance on investing in Dholera Smart City. Reach us for queries about residential and commercial plots, property rates, and site visits."
-  />
-  <meta
-    name="keywords"
-    content="Dholera Contact, Contact Dholera Infratech, Dholera Smart City Contact, Plots in Dholera, Property Dealer Dholera, Investment in Dholera, Dholera Real Estate"
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Dholera Infratech" />
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" href="/images/dholera_infratech_logo.ico" />
-  <link rel="canonical" href="https://dholerainfratech.com/contact" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Contact Us | Dholera Smart City Plots & Investment"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Dholera Infratech to explore top real estate opportunities in Dholera Smart City. Ask about plot prices, locations, and investment options."
+        />
+        <meta
+          property="og:url"
+          content="https://dholerainfratech.com/contact"
+        />
+        <meta
+          property="og:image"
+          content="https://dholerainfratech.com/images/dholera-og.webp"
+        />
 
-  {/* Open Graph / Facebook */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact Us | Dholera Smart City Plots & Investment" />
-  <meta
-    property="og:description"
-    content="Get in touch with Dholera Infratech to explore top real estate opportunities in Dholera Smart City. Ask about plot prices, locations, and investment options."
-  />
-  <meta property="og:url" content="https://dholerainfratech.com/contact" />
-  <meta property="og:image" content="https://dholerainfratech.com/images/dholera-og.webp" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Contact Us | Dholera Smart City Real Estate"
+        />
+        <meta
+          name="twitter:description"
+          content="Speak to our Dholera property experts. Contact us today for real estate investment opportunities in Dholera SIR and Smart City projects."
+        />
+        <meta
+          name="twitter:image"
+          content="https://dholerainfratech.com/images/dholera-og.webp"
+        />
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact Us | Dholera Smart City Real Estate" />
-  <meta
-    name="twitter:description"
-    content="Speak to our Dholera property experts. Contact us today for real estate investment opportunities in Dholera SIR and Smart City projects."
-  />
-  <meta name="twitter:image" content="https://dholerainfratech.com/images/dholera-og.webp" />
-
-  {/* Structured Data - ContactPage */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Dholera Infratech",
-        "url": "https://dholerainfratech.com",
-        "logo": "https://dholerainfratech.com/images/dholera_gujarat_logo.ico",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+91-7440055055",
-          "contactType": "Customer Service",
-          "areaServed": "IN",
-          "availableLanguage": ["English", "Hindi", "Gujarati"]
+        {/* Structured Data - ContactPage */}
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Dholera Infratech",
+            "url": "https://dholerainfratech.com",
+            "logo": "https://dholerainfratech.com/images/dholera_gujarat_logo.ico",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-7440055055",
+              "contactType": "Customer Service",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi", "Gujarati"]
+            }
+          },
+          "url": "https://dholerainfratech.com/contact",
+          "description": "Contact us for property bookings, site visits, and investment opportunities in Dholera Smart City, Gujarat."
         }
-      },
-      "url": "https://dholerainfratech.com/contact",
-      "description": "Contact us for property bookings, site visits, and investment opportunities in Dholera Smart City, Gujarat."
-    }
-    `}
-  </script>
-</Head>
+        `}
+        </script>
+      </Head>
 
       <Navbar />
       <section className="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] py-20 px-4">
@@ -210,9 +234,26 @@ export default function Contact() {
               ></textarea>
             </div>
 
+            {/* Consent checkbox added here */}
+            <div className="flex items-start gap-2 text-sm text-gray-300">
+              <input
+                type="checkbox"
+                id="consent"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className="mt-1 accent-[#ffd200] cursor-pointer"
+              />
+              <label htmlFor="consent" className="cursor-pointer">
+                I authorize Dholera Infratech and its representatives to contact
+                me via Call, SMS, Email, or WhatsApp regarding property details,
+                offers, and services. This consent overrides any DND/NCPR
+                registration.
+              </label>
+            </div>
+
             <button
               type="submit"
-              className="w-full bg-[#ffd200] text-black font-bold py-3 rounded-lg shadow-md hover:bg-[#f7971e] transition-all duration-300"
+              className="w-full bg-[#ffd200] text-black font-bold py-3 rounded-lg shadow-md hover:bg-[#f7971e] transition-all   duration-300"
             >
               Send Message
             </button>

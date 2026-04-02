@@ -42,7 +42,7 @@ const Footer = () => (
         <h4 className="font-semibold text-xl mb-3 border-b border-white/30 pb-1">
           Quick Links
         </h4>
-        {["Home", "About", "Projects", "Contact", "Blog", "Gallery"].map(
+        {["Home", "About", "Projects", "Contact", "Blog", "Gallery", "Terms", "Privacy"].map(
           (text) => (
             <a
               key={text}
