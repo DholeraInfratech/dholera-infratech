@@ -245,7 +245,7 @@ export default function Contact() {
               />
               <label htmlFor="consent" className="cursor-pointer">
                 I authorize Dholera Infratech and its representatives to contact
-                me via Call, SMS, Email, or WhatsApp regarding property details,
+                me via Call, SMS, Email, WhatsApp or RCS regarding property details,
                 offers, and services. This consent overrides any DND/NCPR
                 registration.
               </label>
